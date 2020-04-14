@@ -20,7 +20,10 @@
 
     <!--right slidebar-->
     <link href="{{asset('admin/css/slidebars.css')}}" rel="stylesheet">
-
+    <!--data table-->
+    <link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!--toastr-->
+    <script src="{{asset('admin/assets/toastr-master/toastr.css')}}"></script>
     <!-- Custom styles for this template -->
 
     <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">

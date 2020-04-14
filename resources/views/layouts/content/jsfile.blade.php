@@ -11,19 +11,50 @@
 <script src="{{asset('admin/js/jquery.customSelect.min.js')}}" ></script>
 <script src="{{asset('admin/js/respond.min.js')}}" ></script>
 
-<!--right slidebar-->
-<script src="{{asset('admin/js/slidebars.min.js')}}"></script>
+<!--data table-->
+<script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 
 <!--common script for all pages-->
 <script src="{{asset('admin/js/common-scripts5e1f.js')}}?v=2"></script>
-
+<!--toastr-->
+<script src="{{asset('admin/assets/toastr-master/toastr.js')}}"></script>
+{{--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>--}}
 <!--script for this page-->
 <script src="{{asset('admin/js/sparkline-chart.js')}}"></script>
 <script src="{{asset('admin/js/easy-pie-chart.js')}}"></script>
 <script src="{{asset('admin/js/count.js')}}"></script>
+<script>
+        @if(Session::has('message'))
+            var type = "{{ Session::get('alert-type', 'info') }}";
+            switch(type){
+                case 'info':
+                    toastr.info("{{ Session::get('message') }}");
+                    break;
+                case 'primary':
+                    toastr.info("{{ Session::get('message') }}");
+                    break;
+
+                case 'warning':
+                    toastr.warning("{{ Session::get('message') }}");
+                    break;
+
+                case 'success':
+                    toastr.success("{{ Session::get('message') }}");
+                    break;
+
+                case 'error':
+                    toastr.error("{{ Session::get('message') }}");
+                    break;
+            }
+    @endif
+</script>
 
 <script>
 
+
+    $(document).ready( function () {
+        $('#myTable').DataTable();
+    } );
     //owl carousel
 
     $(document).ready(function() {

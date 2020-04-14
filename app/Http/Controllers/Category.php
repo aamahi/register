@@ -26,17 +26,17 @@ class Category extends Controller
             'author_id' => $request->author_id,
             'created_at' => Carbon::now(),
         ]);
-//        if ($add_category){
+        if ($add_category){
         $notification = array(
             'message' => "Category Added Successfully",
-            'alert-type' => 'success'
+            'alert-type' => 'error'
         );
-//        }
+        }
         return redirect()->back()->with($notification);
     }
 
     public function category(){
-        $all_category = \App\Model\Category::select('id','category_name','author_id','created_at','updated_at')->paginate(8);
+        $all_category = \App\Model\Category::select('id','category_name','author_id','created_at')->get();
         return view('Admin.category',compact('all_category'));
     }
 
