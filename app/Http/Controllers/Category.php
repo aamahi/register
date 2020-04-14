@@ -8,12 +8,6 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 class Category extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-
     public function index(){
         return view('Admin.category');
     }
