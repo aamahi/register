@@ -21,7 +21,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $all_user = User::select('id','name','email','created_at')->orderBy('created_at','DESC')->paginate(4);
+        $all_user = User::select('id','name','email','created_at')->orderBy('created_at','DESC')->paginate(3);
         $total_user = User::count();
         return view('home',compact('all_user','total_user'));
     }
