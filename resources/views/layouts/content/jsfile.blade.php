@@ -17,8 +17,9 @@
 <!--common script for all pages-->
 <script src="{{asset('admin/js/common-scripts5e1f.js')}}?v=2"></script>
 <!--toastr-->
-<script src="{{asset('admin/assets/toastr-master/toastr.js')}}"></script>
-{{--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>--}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+{{--<script src="{{asset('admin/assets/toastr-master/toastr.js')}}"></script>--}}
 <!--script for this page-->
 <script src="{{asset('admin/js/sparkline-chart.js')}}"></script>
 <script src="{{asset('admin/js/easy-pie-chart.js')}}"></script>

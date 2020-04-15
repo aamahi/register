@@ -22,7 +22,8 @@ Route::group(['middleware'=>['auth','verified']],function (){
     Route::post('/update/category/{id}','Category@edit_category');
 
     //Testemonial
-    Route::Get('/add/testimonial',)
+    Route::Get('/testimonial','Testimonial@testimonial')->name('testimonial');
+    Route::Post('/testimonial','Testimonial@testimonial_add');
 });
 //      Frontend Controller
 

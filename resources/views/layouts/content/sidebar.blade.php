@@ -21,7 +21,7 @@
                     <span>Testimonial</span>
                 </a>
                 <ul class="sub">
-                    <li><a  href="boxed_page.html">Testimonial List</a></li>
+                    <li><a  href="{{route('testimonial')}}">Testimonial List</a></li>
                     <li><a  href="boxed_page.html">Add Testimonial</a></li>
                 </ul>
             </li>

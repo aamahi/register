@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/auth/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/auth/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/auth/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/auth/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/auth/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/auth/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/auth/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/auth/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/auth/images/b4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/auth/images/m.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/auth/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/log.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/content/best_product.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/content/count_down.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/content/featured_area.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/content/product_area.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/content/slider.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/content/testimonial.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/layout/head.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/layout/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/testimonial.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/content/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/content/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/content/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/content/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/content/jsfile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/content/jsfile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/content/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/content/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -199,7 +179,7 @@
       <workItem from="1586895507419" duration="2057000" />
       <workItem from="1586901092019" duration="4869000" />
       <workItem from="1586951786175" duration="3154000" />
-      <workItem from="1586970840751" duration="3259000" />
+      <workItem from="1586970840751" duration="9600000" />
     </task>
     <servers />
   </component>
@@ -207,10 +187,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="444" y="154" key="FileChooserDialogImpl" timestamp="1586965381425">
+    <state x="444" y="154" key="FileChooserDialogImpl" timestamp="1586980499492">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state x="444" y="154" key="FileChooserDialogImpl/0.25.1366.743@0.25.1366.743" timestamp="1586965381425" />
+    <state x="444" y="154" key="FileChooserDialogImpl/0.25.1366.743@0.25.1366.743" timestamp="1586980499492" />
     <state x="359" y="124" width="638" height="544" key="NewPhpClassDialog" timestamp="1586901450322">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
@@ -223,10 +203,14 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="314" y="224" key="com.intellij.ide.util.TipDialog/0.25.1366.743@0.25.1366.743" timestamp="1586284499553" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1586974076897">
+    <state x="347" y="175" key="run.anything.popup" timestamp="1586976980600">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1586974076897" />
+    <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1586976980600" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1586980957302">
+      <screen x="0" y="25" width="1366" height="743" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1586980957302" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -235,6 +219,11 @@
           <url>file://$PROJECT_DIR$/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php</url>
           <line>55</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/Admin/testimonial.blade.php</url>
+          <line>96</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
