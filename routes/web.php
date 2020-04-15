@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::group(['middleware'=>['auth','verified']],function (){
-    Route::get('/', function () {
-        return redirect()->route('home');
-    });
     Route::get('/home', 'HomeController@index')->name('home');
 
     Route::get('/category','Category@index')->name('category');
@@ -23,8 +20,13 @@ Route::group(['middleware'=>['auth','verified']],function (){
     Route::post('/category','Category@add_category');
     Route::get('/update/category/{id}','Category@update_category')->name('update_category');
     Route::post('/update/category/{id}','Category@edit_category');
-});
 
+    //Testemonial
+    Route::Get('/add/testimonial',)
+});
+//      Frontend Controller
+
+Route::get('/','Frontend@home')->name('home');
 
 //      AUTH ROUTE
 Auth::routes(['verify' => true]);
