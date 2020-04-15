@@ -24,6 +24,7 @@ Route::group(['middleware'=>['auth','verified']],function (){
     //Testemonial
     Route::Get('/testimonial','Testimonial@testimonial')->name('testimonial');
     Route::Post('/testimonial','Testimonial@testimonial_add');
+    Route::get('/delete_testimonial/{id}','Testimonial@delete_testimonial')->name('delete_testimonial');
 });
 //      Frontend Controller
 

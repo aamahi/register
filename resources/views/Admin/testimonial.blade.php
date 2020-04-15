@@ -32,7 +32,7 @@
                                 <td>{{Str::limit($testimonial->message,20)}}</td>
                                 <td>
                                     <a href="" class="btn btn-info"> <i class="fa fa-edit"></i> </a>
-                                    <a href="" class="btn btn-danger"><i class="fa fa-trash-o"></i></a>
+                                    <a href="{{route('delete_testimonial',$testimonial->id)}}" class="btn btn-danger"><i class="fa fa-trash-o"></i></a>
                                 </td>
                             </tr>
                             @endforeach

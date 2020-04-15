@@ -38,6 +38,15 @@ class Testimonial extends Controller
            );
        }
        return redirect()->back()->with($notification);
-
+    }
+    public function delete_testimonial($id){
+        $testimonial = \App\Model\Testimonial::find($id);
+        unlink('Uploads/Testimonial/'.$testimonial->photo);
+        $testimonial->delete();
+        $notification = array(
+            'message' => 'Testimonial Deleted ',
+            'alert-type' => 'error'
+        );
+        return redirect()->back()->with($notification);
     }
 }
