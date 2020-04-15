@@ -7,14 +7,15 @@ use Illuminate\Http\Request;
 class Testimonial extends Controller
 {
     public function testimonial(){
-        return view('Admin.testimonial');
+        $all_testimonial = \App\Model\Testimonial::all();
+        return view('Admin.testimonial',compact('all_testimonial'));
     }
 
     public function testimonial_add(Request $request){
         $validation_rule =[
             'clint_name'=>'required',
             'position'=>'required',
-            'message'=>'required|max:30',
+            'message'=>'required|min:30',
             'photo'=>'required|mimes:jpeg,jpg,png',
         ];
         $this->validate($request,$validation_rule);

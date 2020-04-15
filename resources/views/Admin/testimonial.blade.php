@@ -11,41 +11,31 @@
                 <div class="col-sm-8">
                     <section class="card">
                         <header class="card-header">
-                            Hover Table
+                           Teastimonial List
                         </header>
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>#</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Username</th>
+                                <th>Photo</th>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Message</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach($all_testimonial as $testimonial)
                             <tr>
-                                <td>1</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td><img width="50" src="{{asset('Uploads/Testimonial/'.$testimonial->photo)}}"></td>
+                                <td>{{$testimonial->clint_name}}</td>
+                                <td>{{$testimonial->position}}</td>
+                                <td>{{Str::limit($testimonial->message,20)}}</td>
+                                <td>
+                                    <a href="" class="btn btn-info"> <i class="fa fa-edit"></i> </a>
+                                    <a href="" class="btn btn-danger"><i class="fa fa-trash-o"></i></a>
+                                </td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Sumon</td>
-                                <td>Mosa</td>
-                                <td>@twitter</td>
-                            </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </section>
