@@ -13,9 +13,9 @@
                                 <table class="table table-bordered" id="myTable">
                                         <thead>
                                         <tr>
-                                            <th scope="col">id</th>
+                                            <th scope="col">Image</th>
                                             <th scope="col">Category Name</th>
-                                            <th scope="col">Author Name</th>
+{{--                                            <th scope="col">Author Name</th>--}}
                                             <th scope="col">Created</th>
                                             <th scope="col">Actions</th>
                                         </tr>
@@ -23,9 +23,9 @@
                                         <tbody>
                                         @foreach($all_category as $category)
                                         <tr>
-                                            <th>{{$category->id}}</th>
+                                            <th> <img width="175" src="{{asset('Uploads/Category/'.$category->category_image)}}"> </th>
                                             <td>{{$category->category_name}}</td>
-                                            <td>{{\App\User::find(($category->author_id))->name}}</td>
+{{--                                            <td>{{\App\User::find(($category->author_id))->name}}</td>--}}
                                             <td>@if($category->created_at)
                                                     {{$category->created_at->format("jS F, Y")}}
                                                 @else
@@ -50,21 +50,25 @@
                                 Add Category
                             </div>
                             <div class="card-body">
-                                <form action="{{route('category')}}" method="post">
+                                <form action="{{route('category')}}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="author_id" value="{{Auth::user()->id}}">
                                     <div class="form-group">
                                         <label for="add_category">Add Category</label>
                                         <input type="text" class="form-control" id="add_category" name="add_category"  placeholder="Add Category">
+                                        @error('add_category')
+                                            <br>
+                                            <p class="text-danger"><i class="fa fa-warning"></i>{{$message}}</p>
+                                        @enderror
                                     </div>
-                                    @error('add_category')
-                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                        {{$message}}
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
+                                    <div class="form-group">
+                                        <label for="category_image">Category Image</label>
+                                        <input type="file" class="form-control" id="category_image" name="category_image" >
+                                        @error('category_image')
+                                            <br>
+                                            <p class="text-danger"><i class="fa fa-warning"></i>{{$message}}</p>
+                                        @enderror
                                     </div>
-                                    @enderror
                                     <button type="submit" class="btn btn-primary">Add Category</button>
                                 </form>
                             </div>

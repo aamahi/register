@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/register.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/register.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Testimonial.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Testimonial.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Uploads/Testimonial/clintimage_202016040205_57_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Uploads/Testimonial/clintimage_202016040208_06_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/testimonial.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/testimonial.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/content/testimonial.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/content/testimonial.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_05_133228_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_05_133228_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Uploads/Testimonial/clintimage_202016040132_23_1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Uploads/Testimonial/clintimage_202016040158_33_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Uploads/Testimonial/clintimage_202016040200_02_6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Uploads/Testimonial/clintimage_202016040206_20_8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/content/featured_area.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/content/featured_area.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +129,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZrmVeg4KgRnyAZbkXSaLMUXKU3" />
@@ -180,7 +189,9 @@
       <workItem from="1586895507419" duration="2057000" />
       <workItem from="1586901092019" duration="4869000" />
       <workItem from="1586951786175" duration="3154000" />
-      <workItem from="1586970840751" duration="11304000" />
+      <workItem from="1586970840751" duration="11554000" />
+      <workItem from="1587038178085" duration="5489000" />
+      <workItem from="1587049399747" duration="3639000" />
     </task>
     <servers />
   </component>
@@ -204,14 +215,14 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="314" y="224" key="com.intellij.ide.util.TipDialog/0.25.1366.743@0.25.1366.743" timestamp="1586284499553" />
-    <state x="347" y="175" key="run.anything.popup" timestamp="1586976980600">
+    <state x="347" y="175" key="run.anything.popup" timestamp="1587048269226">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1586976980600" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1586982747399">
+    <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587048269226" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587051946529">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1586982747399" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587051946529" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
