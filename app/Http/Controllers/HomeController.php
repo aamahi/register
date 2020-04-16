@@ -25,4 +25,5 @@ class HomeController extends Controller
         $total_user = User::count();
         return view('home',compact('all_user','total_user'));
     }
+
 }

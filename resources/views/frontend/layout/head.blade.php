@@ -10,6 +10,11 @@
     <!-- Place favicon.ico in the root directory -->
     <!-- all css here -->
     <!-- bootstrap v4.0.0-beta.2 css -->
+    <!--toastr-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
     <!-- owl.carousel.2.0.0-beta.2.4 css -->
     <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.min.css')}}">

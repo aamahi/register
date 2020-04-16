@@ -48,19 +48,51 @@ class Category extends Controller
 
     public function update_category($id){
         $update_category = \App\Model\Category::find($id);
+//        echo $update_category;
         return view('Admin.update_category',compact('update_category'));
     }
    public function edit_category(Request $request,$id){
         $update_category = \App\Model\Category::find($id);
-        $validation_rules = [
-            'add_category'=>'required | unique:categories,category_name',
-            'category_image'=>'required | mimes:jpg,png,jpeg',
-        ];
-        $this->validate($request,$validation_rules);
+//
+//        if($request->file('category_image')) {
+//            $old_photo_name = $request->category_image;
+//            echo $old_photo_name;
+//            $photo = $request->file('category_image');
+//            $photo_name = $photo->getClientOriginalName();
+//            echo $photo_name;
+////            unlink('Uploads/Category/');
+//            $validation_rules = [
+//                'add_category'=>'required',
+//                'category_image'=>'image',
+//            ];
+//            $this->validate($request,$validation_rules);
+//            $photo = $request->file('category_image');
+//            $photo_extensiton = $photo->getClientOriginalExtension();
+//            $image = "categoryImage_".date("Ymd_his_").rand(1,50).".".$photo_extensiton;
+//            $upload_location = base_path('public/Uploads/Category/'.$image);
+//            Image::make($photo)->resize(360,160)->save($upload_location,75);
+//            $add_category= \App\Model\Category::insert([
+//                'category_name' => $request->add_category,
+//                'author_id' => $request->author_id,
+//                'category_image' => $image,
+//                'created_at' => Carbon::now(),
+////            ]);
+//        }else{
+//            $validation_rules = [
+//                'add_category'=>'required ',
+//            ];
+//            $this->validate($request,$validation_rules);
+//        }
+//        $validation_rules = [
+//            'add_category'=>'required ',
+//        ];
+////        $this->validate($request,$validation_rules);
+//       return $request->all();
+//       return $request->file('category_image');
 
-        $update_category->category_name = $request->add_category;
-        $update_category->save();
-        return redirect()->back();
+//        $update_category->category_name = $request->add_category;
+//        $update_category->save();
+//        return redirect()->back();
    }
     public function temporary_delete_category($id){
         $delete = \App\Model\Category::find($id);

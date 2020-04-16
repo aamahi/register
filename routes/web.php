@@ -32,6 +32,8 @@ Route::group(['middleware'=>['auth','verified']],function (){
 //      Frontend Controller
 
 Route::get('/','Frontend@home')->name('home');
+Route::get('/contact','Frontend@contact')->name('contact');
+Route::post('/contact','Frontend@contact_send');
 
 //      AUTH ROUTE
 Auth::routes(['verify' => true]);
