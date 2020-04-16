@@ -10,7 +10,7 @@
 <script src="{{asset('admin/js/owl.carousel.js')}}" ></script>
 <script src="{{asset('admin/js/jquery.customSelect.min.js')}}" ></script>
 <script src="{{asset('admin/js/respond.min.js')}}" ></script>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!--data table-->
 <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 
@@ -48,6 +48,21 @@
                     break;
             }
     @endif
+
+    $('.delete').on('click', function (event) {
+            event.preventDefault();
+            const url = $(this).attr('href');
+            swal({
+                title: 'Are you sure?',
+                text: 'This record and it`s details will be permanantly deleted!',
+                icon: 'warning',
+                buttons: ["Cancel", "Yes!"],
+            }).then(function(value) {
+                if (value) {
+                    window.location.href = url;
+                }
+            });
+        });
 </script>
 
 <script>

@@ -15,11 +15,14 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware'=>['auth','verified']],function (){
     Route::get('/home', 'HomeController@index')->name('home');
 
-    Route::get('/category','Category@index')->name('category');
     Route::get('/category','Category@category')->name('category');
     Route::post('/category','Category@add_category');
+    Route::get('temporary_delete_category/{id}','Category@temporary_delete_category')->name('temporary_delete_category');
     Route::get('/update/category/{id}','Category@update_category')->name('update_category');
     Route::post('/update/category/{id}','Category@edit_category');
+    Route::get('/deleted_category_list','Category@deletd_category_list')->name('deletd_category_list');
+    Route::get('/deleted_category/{id}','Category@deletd_category')->name('deletd_category');
+    Route::get('/restore_category/{id}','Category@restore_category')->name('restore_category');
 
     //Testemonial
     Route::Get('/testimonial','Testimonial@testimonial')->name('testimonial');

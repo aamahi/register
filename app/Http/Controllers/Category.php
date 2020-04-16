@@ -9,9 +9,7 @@ use Illuminate\Validation\Rule;
 use Intervention\Image\Facades\Image;
 class Category extends Controller
 {
-    public function index(){
-        return view('Admin.category');
-    }
+
     public function add_category(Request $request)
     {
         $validation_rules = [
@@ -64,5 +62,35 @@ class Category extends Controller
         $update_category->save();
         return redirect()->back();
    }
-
+    public function temporary_delete_category($id){
+        $delete = \App\Model\Category::find($id);
+        $delete->delete();
+        $notification = array(
+            'message' => "Category Temporary Deleted",
+            'alert-type' => 'error'
+        );
+        return redirect()->back()->with($notification);
+    }
+    public function deletd_category_list(){
+        $deleted_category = \App\Model\Category::onlyTrashed()->get();
+        return view('Admin.deleted_category',compact('deleted_category'));
+    }
+    public function restore_category($id){
+        $restore_category = \App\Model\Category::withTrashed()->find($id)->restore();
+        $notification = array(
+            'message' => "Category Restored",
+            'alert-type' => 'info'
+        );
+        return redirect()->route('category')->with($notification);
+    }
+    public function deletd_category($id){
+        $restore_category = \App\Model\Category::withTrashed()->find($id);
+        unlink('Uploads/Category/'.$restore_category->category_image);
+        $restore_category->forceDelete();
+        $notification = array(
+            'message' => "Category Deleted ",
+            'alert-type' => 'error'
+        );
+        return redirect()->back()->with($notification);
+    }
 }

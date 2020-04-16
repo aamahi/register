@@ -8,12 +8,15 @@
                     <span>Dashboard</span>
                 </a>
             </li>
-
             <li class="sub-menu">
-                <a href="{{route('category')}}" >
+                <a href="javascript:;" >
                     <i class="fa fa-tasks"></i>
                     <span>Category</span>
                 </a>
+                <ul class="sub">
+                    <li><a  href="{{route('category')}}">Category List</a></li>
+                    <li><a  href="{{route('deletd_category_list')}}">Deleted Category</a></li>
+                </ul>
             </li>
             <li class="sub-menu">
                 <a href="javascript:;" >

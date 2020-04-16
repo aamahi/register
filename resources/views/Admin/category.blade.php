@@ -35,7 +35,7 @@
                                             <td>
                                                 <a href="" class="btn btn-success btn-md"> <i class="fa fa-eye"> </i> </a>
                                                 <a href="{{route('update_category',$category->id)}}" class="btn btn-info btn-md"> <i class="fa fa-pencil"> </i> </a>
-                                                <a href="" class="btn btn-danger btn-md"> <i class="fa fa-trash-o"> </i> </a>
+                                                <a href="{{route('temporary_delete_category',$category->id)}}" class="btn btn-danger btn-md delete"> <i class="fa fa-trash-o"> </i> </a>
                                             </td>
                                         </tr>
                                         @endforeach
