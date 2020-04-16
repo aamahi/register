@@ -28,6 +28,10 @@ Route::group(['middleware'=>['auth','verified']],function (){
     Route::Get('/testimonial','Testimonial@testimonial')->name('testimonial');
     Route::Post('/testimonial','Testimonial@testimonial_add');
     Route::get('/delete_testimonial/{id}','Testimonial@delete_testimonial')->name('delete_testimonial');
+
+    //Contact
+    Route::get('/admin/contact','Contract@contact')->name('admin.contact');
+    Route::get('/admin/delete_contact_message/{id}','Contract@delete_contact_message')->name('delete_contact_message');
 });
 //      Frontend Controller
 
