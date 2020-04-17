@@ -21,6 +21,9 @@
                             <ul class="nav nav-pills nav-stacked labels-info ">
                                 <li><i class=" fa fa-envelope text-danger"></i> Email : {{$contact_message->email}}</p></li>
                             </ul>
+                            <ul class="nav nav-pills nav-stacked labels-info ">
+                                <li><i class=" fa fa-clock-o text-danger"></i> Send : {{$contact_message->created_at->diffForHumans()}}</p></li>
+                            </ul>
                             <br/>
                             <div class="">
                                 <a href="{{route('admin.contact')}}" class="btn btn-sm btn-primary"> <i class=" fa fa-reply"></i> Reply </a>

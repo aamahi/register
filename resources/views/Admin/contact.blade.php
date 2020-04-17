@@ -10,9 +10,10 @@
                                All Contact Message
                             </div>
                             <div class="card-body">
-                                <table class="table table-bordered" id="myTable">
+                                <table class="table table-bordered">
                                         <thead>
                                         <tr>
+                                            <th scope="col">Id</th>
                                             <th scope="col">Name</th>
                                             <th scope="col">Email</th>
                                             <th scope="col">Send Message</th>
@@ -22,6 +23,7 @@
                                         <tbody>
                                         @foreach($all_message as $message)
                                         <tr>
+                                            <td>{{$message->id}}</td>
                                             <td>{{$message->name}}</td>
                                             <td>{{$message->email}}</td>
                                             <td>@if($message->created_at)
@@ -32,8 +34,12 @@
                                             </td>
 
                                             <td>
-                                                <a href="{{route('show_contact_message',$message->id)}}" class="btn btn-success btn-md"> <i class="fa fa-eye"> </i> Read </a>
-                                                <a href="{{route('delete_contact_message',$message->id)}}" class="btn btn-danger btn-md delete"> <i class="fa fa-trash-o"> </i> Delete</a>
+                                                @if($message->status !=1)
+                                                    <a href="{{route('show_contact_message',$message->id)}}" class="btn btn-warning btn-md"></i> Mark as Read </a>
+                                                @else
+                                                    <a href="{{route('show_contact_message',$message->id)}}" class="btn btn-success btn-md"> <i class="fa fa-eye"> </i> Read </a>
+                                                    <a href="{{route('delete_contact_message',$message->id)}}" class="btn btn-danger btn-md delete"> </i> Delete</a>
+                                                @endif
                                             </td>
                                         </tr>
                                         @endforeach

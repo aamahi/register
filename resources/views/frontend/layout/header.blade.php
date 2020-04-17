@@ -80,13 +80,10 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">Blog <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown_style">
-                                    <li><a href="blog.html">blog Page</a></li>
-                                    <li><a href="blog-details.html">blog Details</a></li>
-                                </ul>
+                                <a href="">Blog</a>
+{{--                                <a href="{{route('blog')}}">Blog <i class="fa fa-angle-down"></i></a>--}}
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{route('contact')}}">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -215,7 +212,7 @@
                                     <li><a href="blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{route('contact')}}">Contact</a></li>
                         </ul>
                     </div>
                 </div>

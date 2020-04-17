@@ -19,14 +19,10 @@
                 </ul>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="{{route('testimonial')}}" >
                     <i class="fa fa-star"></i>
                     <span>Testimonial</span>
                 </a>
-                <ul class="sub">
-                    <li><a  href="{{route('testimonial')}}">Testimonial List</a></li>
-                    <li><a  href="boxed_page.html">Add Testimonial</a></li>
-                </ul>
             </li>
             <li class="sub-menu">
                 <a href="{{route('admin.contact')}}" >

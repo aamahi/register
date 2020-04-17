@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class Testimonial extends Controller
 {
     public function testimonial(){
-        $all_testimonial = \App\Model\Testimonial::all();
+        $all_testimonial = \App\Model\Testimonial::latest()->get();
         return view('Admin.testimonial',compact('all_testimonial'));
     }
 
