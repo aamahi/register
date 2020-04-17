@@ -31,7 +31,7 @@
                 </a>
                 <ul class="sub">
                     <li><a  href="{{route('admin.blog')}}">Blog</a></li>
-                    <li><a  href="{{route('deletd_category_list')}}">Deleted Category</a></li>
+                    <li><a  href="{{route('deleted_blog')}}">Deleted Category</a></li>
                 </ul>
             </li>
             <li class="sub-menu">

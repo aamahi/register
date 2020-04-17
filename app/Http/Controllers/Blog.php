@@ -42,6 +42,37 @@ class Blog extends Controller
         $blog=  \App\Model\Blog::with('comments')->find($id);
         return view('Admin.show_blog',compact('blog'));
     }
+    public function temporary_delete_blog($id){
+        $blog = \App\Model\Blog::find($id);
+        $blog->delete();
+        $notification = array(
+            'message' => "Blog Deleted Temporary",
+            'alert-type' => 'error'
+        );
+
+        return redirect()->back()->with($notification);
+    }
+    public function deleted_blog(){
+        $deleted_blog = \App\Model\Blog::onlyTrashed()->get();
+        return view('Admin.deleted_blog',compact('deleted_blog'));
+    }
+    public function restore_blog($id){
+        $restore_blog= \App\Model\Blog::withTrashed()->find($id)->restore();
+        $notification = array(
+            'message' => "Blog Restore Sucessfully!",
+            'alert-type' => 'info'
+        );
+        return redirect()->route('admin.blog')->with($notification);
+    }
+    public function delete_blog_lifetime($id){
+        $dleted_blog= \App\Model\Blog::withTrashed()->find($id)->forceDelete();
+        $notification = array(
+            'message' => "Blog Deleted LIfetime!",
+            'alert-type' => 'error'
+        );
+        return redirect()->back()->with($notification);
+    }
+
 
 }
 

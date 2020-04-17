@@ -30,7 +30,7 @@
                                     <td>{{\App\User::find(($blog->author_id))->name}}</td>
                                     <td>
                                         <a href="{{route('admin.blog_details',$blog->id)}}" class="btn btn-info"> <i class="fa fa-eye"></i> </a>
-                                        <a href="{{route('delete_testimonial',$blog->id)}}" class="btn btn-danger"><i class="fa fa-trash-o"></i></a>
+                                        <a href="{{route('temporary_delete_blog',$blog->id)}}" class="btn btn-danger delete"><i class="fa fa-trash-o"></i></a>
                                     </td>
                                 </tr>
                             @endforeach

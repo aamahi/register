@@ -40,6 +40,10 @@ Route::group(['middleware'=>['auth','verified']],function (){
     Route::Get('/admin/blog/','Blog@blog_list')->name('admin.blog');
     Route::Post('/admin/blog/','Blog@add_blog');
     Route::Get('/admin/blog_details/{id}','Blog@blog_details')->name('admin.blog_details');
+    Route::Get('/temporary_delete_blog/{id}','Blog@temporary_delete_blog')->name('temporary_delete_blog');
+    Route::Get('/deleted_blog','Blog@deleted_blog')->name('deleted_blog');
+    Route::Get('/restore_blog/{id}','Blog@restore_blog')->name('restore_blog');
+    Route::Get('/delete_blog_lifetime/{id}','Blog@delete_blog_lifetime')->name('delete_blog_lifetime');
 
 });
 //      Frontend Controller

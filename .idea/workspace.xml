@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/show_blog.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/blog_details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/deleted_blog.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_17_211607_create_blogs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_17_211607_create_blogs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/deleted_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/deleted_category.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/write_blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/write_blog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/content/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/content/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +185,7 @@
       <workItem from="1587038178085" duration="5489000" />
       <workItem from="1587049399747" duration="15537000" />
       <workItem from="1587127545490" duration="16895000" />
-      <workItem from="1587157356380" duration="6581000" />
+      <workItem from="1587157356380" duration="8427000" />
     </task>
     <servers />
   </component>
@@ -216,6 +213,10 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="314" y="224" key="com.intellij.ide.util.TipDialog/0.25.1366.743@0.25.1366.743" timestamp="1586284499553" />
+    <state x="433" y="313" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587164854121">
+      <screen x="0" y="25" width="1366" height="743" />
+    </state>
+    <state x="433" y="313" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1366.743@0.25.1366.743" timestamp="1587164854121" />
     <state x="100" y="125" width="1166" height="543" key="dock-window-1" timestamp="1587135556608">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
@@ -224,10 +225,10 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587048269226" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587163939473">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587165464100">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587163939473" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587165464100" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
