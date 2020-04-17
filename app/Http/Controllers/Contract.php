@@ -19,4 +19,8 @@ class Contract extends Controller
         );
         return redirect()->back()->with($notification);
     }
+    public function show_contact_message($id){
+        $contact_message = Contact::find($id);
+        return view('Admin.show_contact_message',compact('contact_message'));
+    }
 }

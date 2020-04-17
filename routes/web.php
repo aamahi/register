@@ -32,6 +32,7 @@ Route::group(['middleware'=>['auth','verified']],function (){
     //Contact
     Route::get('/admin/contact','Contract@contact')->name('admin.contact');
     Route::get('/admin/delete_contact_message/{id}','Contract@delete_contact_message')->name('delete_contact_message');
+    Route::get('/admin/show_contact_message/{id}','Contract@show_contact_message')->name('show_contact_message');
 });
 //      Frontend Controller
 

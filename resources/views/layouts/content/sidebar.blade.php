@@ -29,13 +29,10 @@
                 </ul>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="{{route('admin.contact')}}" >
                     <i class="fa fa-envelope"></i>
                     <span>Contact</span>
                 </a>
-                <ul class="sub">
-                    <li><a  href="{{route('admin.contact')}}">All Message</a></li>
-                </ul>
             </li>
 
         </ul>

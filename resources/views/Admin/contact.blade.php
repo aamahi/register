@@ -32,7 +32,7 @@
                                             </td>
 
                                             <td>
-                                                <a href="" class="btn btn-success btn-md"> <i class="fa fa-eye"> </i> Read </a>
+                                                <a href="{{route('show_contact_message',$message->id)}}" class="btn btn-success btn-md"> <i class="fa fa-eye"> </i> Read </a>
                                                 <a href="{{route('delete_contact_message',$message->id)}}" class="btn btn-danger btn-md delete"> <i class="fa fa-trash-o"> </i> Delete</a>
                                             </td>
                                         </tr>
