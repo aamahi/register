@@ -36,4 +36,8 @@ class Frontend extends Controller
         );
         return redirect()->back()->with($notification);
     }
+    public function blog(){
+        $blogs = \App\Model\Blog::latest()->paginate('3');
+        return view('frontend.blog',compact('blogs'));
+    }
 }

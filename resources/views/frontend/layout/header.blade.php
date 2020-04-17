@@ -80,7 +80,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="">Blog</a>
+                                <a href="{{route('blog')}}">Blog</a>
 {{--                                <a href="{{route('blog')}}">Blog <i class="fa fa-angle-down"></i></a>--}}
                             </li>
                             <li><a href="{{route('contact')}}">Contact</a></li>

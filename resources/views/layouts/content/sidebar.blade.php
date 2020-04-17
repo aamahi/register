@@ -25,6 +25,16 @@
                 </a>
             </li>
             <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-pencil"></i>
+                    <span>Blog</span>
+                </a>
+                <ul class="sub">
+                    <li><a  href="{{route('admin.blog')}}">Blog</a></li>
+                    <li><a  href="{{route('deletd_category_list')}}">Deleted Category</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
                 <a href="{{route('admin.contact')}}" >
                     <i class="fa fa-envelope"></i>
                     <span>Contact</span>

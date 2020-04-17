@@ -33,10 +33,16 @@ Route::group(['middleware'=>['auth','verified']],function (){
     Route::get('/admin/contact','Contract@contact')->name('admin.contact');
     Route::get('/admin/delete_contact_message/{id}','Contract@delete_contact_message')->name('delete_contact_message');
     Route::get('/admin/show_contact_message/{id}','Contract@show_contact_message')->name('show_contact_message');
+
+    // BLog
+
+    Route::Get('/admin/blog/','Blog@blog_list')->name('admin.blog');
+    Route::Post('/admin/blog/','Blog@add_blog');
 });
 //      Frontend Controller
 
 Route::get('/','Frontend@home')->name('home');
+Route::get('/blog','Frontend@blog')->name('blog');
 Route::get('/contact','Frontend@contact')->name('contact');
 Route::post('/contact','Frontend@contact_send');
 
