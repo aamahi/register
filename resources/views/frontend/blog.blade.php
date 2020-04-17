@@ -44,7 +44,7 @@
                                     <li class="pull-right"><a href="#"><i class="fa fa-clock-o"></i> {{$blog->created_at->format(' d/m/Y')}}</a></li>
                                 </ul>
                             </div>
-                            <h3><a href="blog-details.html"> {{$blog->title}}</a></h3>
+                            <h3><a href="{{route('blog_details',$blog->id)}}"> {{$blog->title}}</a></h3>
                             <p>{{Str::limit($blog->details,155)}}</p>
                         </div>
                     </div>
@@ -58,3 +58,4 @@
     </div>
     <!-- blog-area end -->
 @endsection
+

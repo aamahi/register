@@ -29,7 +29,7 @@
                                     <td>{{$blog->title}}</td>
                                     <td>{{\App\User::find(($blog->author_id))->name}}</td>
                                     <td>
-                                        <a href="" class="btn btn-info"> <i class="fa fa-edit"></i> </a>
+                                        <a href="{{route('admin.blog_details',$blog->id)}}" class="btn btn-info"> <i class="fa fa-eye"></i> </a>
                                         <a href="{{route('delete_testimonial',$blog->id)}}" class="btn btn-danger"><i class="fa fa-trash-o"></i></a>
                                     </td>
                                 </tr>

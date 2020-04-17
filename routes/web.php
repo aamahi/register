@@ -39,14 +39,19 @@ Route::group(['middleware'=>['auth','verified']],function (){
 
     Route::Get('/admin/blog/','Blog@blog_list')->name('admin.blog');
     Route::Post('/admin/blog/','Blog@add_blog');
+    Route::Get('/admin/blog_details/{id}','Blog@blog_details')->name('admin.blog_details');
+
 });
 //      Frontend Controller
 
 Route::get('/','Frontend@home')->name('home');
 Route::get('/blog','Frontend@blog')->name('blog');
+Route::get('/blog/details/{id}','Frontend@blog_details')->name('blog_details');
+
 Route::get('/contact','Frontend@contact')->name('contact');
 Route::post('/contact','Frontend@contact_send');
 
+Route::post('/comment','Comment@send');
 //      AUTH ROUTE
 Auth::routes(['verify' => true]);
 

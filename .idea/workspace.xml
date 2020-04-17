@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/show_blog.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/blog_details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Uploads/Category/categoryImage_20200417_090305_23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Uploads/Category/categoryImage_20200417_090337_23.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/update_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/update_category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_17_211607_create_blogs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_17_211607_create_blogs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/write_blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/write_blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +138,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Admin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -143,13 +147,13 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/frontend" />
-      <recent name="$PROJECT_DIR$/resources/views/Admin" />
-      <recent name="$PROJECT_DIR$/resources/views/auth" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/Admin" />
+      <recent name="$PROJECT_DIR$/resources/views/frontend" />
+      <recent name="$PROJECT_DIR$/resources/views/auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -183,7 +187,8 @@
       <workItem from="1586970840751" duration="11554000" />
       <workItem from="1587038178085" duration="5489000" />
       <workItem from="1587049399747" duration="15537000" />
-      <workItem from="1587127545490" duration="13321000" />
+      <workItem from="1587127545490" duration="16895000" />
+      <workItem from="1587157356380" duration="6581000" />
     </task>
     <servers />
   </component>
@@ -219,10 +224,10 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587048269226" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587148777170">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587163939473">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587148777170" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587163939473" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -251,6 +256,11 @@
           <url>file://$PROJECT_DIR$/resources/views/frontend/blog.blade.php</url>
           <line>31</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/frontend/blog.blade.php</url>
+          <line>60</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

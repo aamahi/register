@@ -23,7 +23,7 @@ class Blog extends Controller
        $image_extension = $image->getClientOriginalExtension();
        $photo = "blogphoto".date('Ymd_his_').rand(1,20).".".$image_extension;
        $upload_location = base_path("public/Uploads/Blog/".$photo);
-       Image::make($image)->resize('550','370')->save($upload_location);
+       Image::make($image)->resize('825','455')->save($upload_location);
        $post =[];
        $post['title']= $request->title;
        $post['author_id']= $request->author_id;
@@ -38,5 +38,11 @@ class Blog extends Controller
 
         return redirect()->back()->with($notification);
     }
+    public function blog_details($id){
+        $blog=  \App\Model\Blog::with('comments')->find($id);
+        return view('Admin.show_blog',compact('blog'));
+    }
 
 }
+
+

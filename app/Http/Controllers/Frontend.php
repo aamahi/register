@@ -40,4 +40,10 @@ class Frontend extends Controller
         $blogs = \App\Model\Blog::latest()->paginate('3');
         return view('frontend.blog',compact('blogs'));
     }
+    public function blog_details($id){
+        $blog_details = \App\Model\Blog::with('comments')->find($id);
+        $categories = \App\Model\Category::select('category_name')->get();
+        $blogs = \App\Model\Blog::latest()->paginate(5);
+        return view('frontend.blog_details',compact('blog_details','blogs','categories'));
+    }
 }
