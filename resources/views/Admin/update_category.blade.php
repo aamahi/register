@@ -10,7 +10,7 @@
                             Update Category
                         </div>
                         <div class="card-body">
-                            <form action="{{URL('/update/category/{id}')}}" method="post" enctype="multipart/form-data">
+                            <form action="{{url('update_category/'.$update_category->id)}}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 @if($errors->any())
                                     @foreach($errors->all() as $error)

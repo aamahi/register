@@ -51,49 +51,57 @@ class Category extends Controller
 //        echo $update_category;
         return view('Admin.update_category',compact('update_category'));
     }
-   public function edit_category(Request $request,$id){
+    public function update_category_p(Request $request,$id){
         $update_category = \App\Model\Category::find($id);
-//
-//        if($request->file('category_image')) {
-//            $old_photo_name = $request->category_image;
-//            echo $old_photo_name;
-//            $photo = $request->file('category_image');
-//            $photo_name = $photo->getClientOriginalName();
-//            echo $photo_name;
-////            unlink('Uploads/Category/');
-//            $validation_rules = [
-//                'add_category'=>'required',
-//                'category_image'=>'image',
-//            ];
-//            $this->validate($request,$validation_rules);
-//            $photo = $request->file('category_image');
-//            $photo_extensiton = $photo->getClientOriginalExtension();
-//            $image = "categoryImage_".date("Ymd_his_").rand(1,50).".".$photo_extensiton;
-//            $upload_location = base_path('public/Uploads/Category/'.$image);
-//            Image::make($photo)->resize(360,160)->save($upload_location,75);
-//            $add_category= \App\Model\Category::insert([
-//                'category_name' => $request->add_category,
-//                'author_id' => $request->author_id,
-//                'category_image' => $image,
-//                'created_at' => Carbon::now(),
-////            ]);
-//        }else{
-//            $validation_rules = [
-//                'add_category'=>'required ',
-//            ];
-//            $this->validate($request,$validation_rules);
-//        }
-//        $validation_rules = [
-//            'add_category'=>'required ',
-//        ];
-////        $this->validate($request,$validation_rules);
-//       return $request->all();
-//       return $request->file('category_image');
+        $old_image = $update_category->category_image;
+        if ($request->file('category_image')){
+            $validation_rules = [
+                'add_category' => ' required | min:4',
+                'category_image' => 'mimes:jpg,png,jpeg'
+            ];
+            $this->validate($request,$validation_rules);
 
-//        $update_category->category_name = $request->add_category;
-//        $update_category->save();
-//        return redirect()->back();
-   }
+            unlink('Uploads/Category/'.$old_image);
+
+            $photo = $request->file('category_image');
+            $photo_extensiton = $photo->getClientOriginalExtension();
+            $image = "categoryImage_".date("Ymd_his_").rand(1,50).".".$photo_extensiton;
+            $upload_location = base_path('public/Uploads/Category/'.$image);
+            Image::make($photo)->resize(360,160)->save($upload_location,75);
+            $update_category->update([
+                'category_name' => $request->add_category,
+                'category_image' => $image,
+                'updated_at' => Carbon::now(),
+            ]);
+            if ($update_category){
+                $notification = array(
+                    'message' => "Category Updated Successfully",
+                    'alert-type' => 'info'
+                );
+            }
+            return redirect()->route('category')->with($notification);
+
+        }else{
+            $validation_rules = [
+                'add_category' => ' required | min:4',
+            ];
+            $this->validate($request,$validation_rules);
+            $update_category->update([
+                'category_name' => $request->add_category,
+                'updated_at' => Carbon::now(),
+            ]);
+            if ($update_category){
+                $notification = array(
+                    'message' => "Category Updated Successfully",
+                    'alert-type' => 'info'
+                );
+            }
+            return redirect()->route('category')->with($notification);
+
+        }
+
+    }
+
     public function temporary_delete_category($id){
         $delete = \App\Model\Category::find($id);
         $delete->delete();
@@ -125,4 +133,5 @@ class Category extends Controller
         );
         return redirect()->back()->with($notification);
     }
+
 }
