@@ -45,6 +45,12 @@ Route::group(['middleware'=>['auth','verified']],function (){
     Route::Get('/restore_blog/{id}','Blog@restore_blog')->name('restore_blog');
     Route::Get('/delete_blog_lifetime/{id}','Blog@delete_blog_lifetime')->name('delete_blog_lifetime');
 
+    // Product
+
+    Route::get('/admin/product/','Product@product')->name('admin.product');
+    Route::get('/add/product/','Product@add_product')->name('add_product');
+    Route::post('/add/product/','Product@add_product_pro');
+
 });
 //      Frontend Controller
 

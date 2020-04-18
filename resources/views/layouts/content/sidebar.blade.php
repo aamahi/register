@@ -19,6 +19,17 @@
                 </ul>
             </li>
             <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>Product</span>
+                </a>
+                <ul class="sub">
+                    <li><a  href="{{route('admin.product')}}">Product List</a></li>
+                    <li><a  href="{{route('add_product')}}">Product Add</a></li>
+                    <li><a  href="{{route('deletd_category_list')}}">Deleted Product</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
                 <a href="{{route('testimonial')}}" >
                     <i class="fa fa-star"></i>
                     <span>Testimonial</span>
