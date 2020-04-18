@@ -71,12 +71,27 @@
                             <li>
                                 <a href="javascript:void(0);">Pages <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown_style">
-                                    <li><a href="about.html">About Page</a></li>
-                                    <li><a href="single-product.html">Product Details</a></li>
-                                    <li><a href="cart.html">Shopping cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li class="f=t" style="margin-left: 30px;"><a href="faq.html">FAQ</a> <br><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"></li>
+                                    <li class="float-left" style="margin-left: 30px;><a href="faq.html">FAQ</a> <br><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"></li>
+                                    <li class="float-left" style="margin-left: 30px;><a href="faq.html">FAQ</a> <br><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"></li>
+                                    <li class="float-left" style="margin-left: 30px;><a href="faq.html">FAQ</a> <br><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Pages <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown_style">
+                                    <li class="nav-item">
+                                        <div class="yamm-content">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Anim pariatur</a></div>
+{{--                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Reprehenderit</a></div>--}}
+{{--                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Keffiyeh helvetica</a></div>--}}
+{{--                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Pariatur cliche</a></div>--}}
+{{--                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Food truck quinoa</a></div>--}}
+                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Leggings occaecat craft</a></div>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li>

@@ -10,9 +10,9 @@ class Frontend extends Controller
 {
     public function home(){
         $testimonials = \App\Model\Testimonial::all();
-
+        $latest_product =\App\Model\Product::latest()->paginate('8');
         $all_category = \App\Model\Category::select('id','category_name','category_image','author_id','created_at')->get();
-        return view('frontend.home',compact('all_category','testimonials'));
+        return view('frontend.home',compact('all_category','testimonials','latest_product'));
     }
     public function contact(){
         return view('frontend.contact');

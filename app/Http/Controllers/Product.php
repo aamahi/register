@@ -10,7 +10,7 @@ class Product extends Controller
 {
     public function product(){
         $categories = \App\Model\Category::latest()->get();
-        $products = \App\Model\Product::latest()->paginate(9);
+        $products = \App\Model\Product::latest()->paginate(6);
         return view('Admin.product_list',compact('products','categories'));
     }
     public function add_product(){
