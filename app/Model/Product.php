@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Product extends Model
 {
     use SoftDeletes;
+
     protected $fillable=
         [
             'product_name',
@@ -17,4 +18,8 @@ class Product extends Model
             'description',
             'image',
         ];
+
+    public function category(){
+        return $this->hasOne(Category::class,'id','category_id');
+    }
 }

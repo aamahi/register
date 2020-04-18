@@ -57,6 +57,7 @@ Route::group(['middleware'=>['auth','verified']],function (){
 Route::get('/','Frontend@home')->name('home');
 Route::get('/blog','Frontend@blog')->name('blog');
 Route::get('/blog/details/{id}','Frontend@blog_details')->name('blog_details');
+Route::get('/product/details/{id}','Frontend@product_details')->name('product_detailse');
 
 Route::get('/contact','Frontend@contact')->name('contact');
 Route::post('/contact','Frontend@contact_send');

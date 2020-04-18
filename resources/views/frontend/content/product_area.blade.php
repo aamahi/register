@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="product-content">
-                        <h3><a href="single-product.html">{{$product->product_name}}</a></h3>
+                        <h3><a href="{{route('product_detailse',$product->id)}}">{{$product->product_name}}</a></h3>
                         <p class="pull-left">{{$product->price}}.00 taka
 
                         </p>
