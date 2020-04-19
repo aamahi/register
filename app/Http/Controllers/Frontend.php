@@ -51,7 +51,7 @@ class Frontend extends Controller
 
         $product_details = \App\Model\Product::with('category')->find($id);
         $category_id =\App\Model\Product::with('category')->find($id)->category_id;
-        $related_product = \App\Model\Product::where('category_id',$category_id)->where('id','!=',$id)->get();
+        $related_product = \App\Model\Product::where('category_id',$category_id)->where('id','!=',$id)->latest()->paginate(4);
         return view('frontend.product_details',compact('product_details','related_product'));
     }
 }
