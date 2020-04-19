@@ -18,24 +18,22 @@
                             <tr>
                                 <th>Photo</th>
                                 <th>Name</th>
-                                <th>Position</th>
                                 <th>Message</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
-{{--                            @foreach($all_testimonial as $testimonial)--}}
-{{--                            <tr>--}}
-{{--                                <td><img width="50" src="{{asset('Uploads/Testimonial/'.$testimonial->photo)}}"></td>--}}
-{{--                                <td>{{$testimonial->clint_name}}</td>--}}
-{{--                                <td>{{$testimonial->position}}</td>--}}
-{{--                                <td>{{Str::limit($testimonial->message,20)}}</td>--}}
-{{--                                <td>--}}
-{{--                                    <a href="" class="btn btn-info"> <i class="fa fa-edit"></i> </a>--}}
-{{--                                    <a href="{{route('delete_testimonial',$testimonial->id)}}" class="btn btn-danger"><i class="fa fa-trash-o"></i></a>--}}
-{{--                                </td>--}}
-{{--                            </tr>--}}
-{{--                            @endforeach--}}
+                            @foreach($all_banner as $banner)
+                            <tr>
+                                <td><img width="50" src="{{asset('Uploads/Banner/'.$banner->photo)}}"></td>
+                                <td>{{$banner->banner_title}}</td>
+                                <td>{{Str::limit($banner->description,39)}}</td>
+                                <td>
+                                    <a href="" class="btn btn-info"> <i class="fa fa-edit"></i> </a>
+                                    <a href="{{route('delete_banner',$banner->id)}}" class="btn btn-danger"><i class="fa fa-trash-o"></i></a>
+                                </td>
+                            </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </section>

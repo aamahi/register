@@ -53,6 +53,7 @@ Route::group(['middleware'=>['auth','verified']],function (){
     // Product
     Route::get('/admin/banner/','Banner@banner')->name('admin.banner');
     Route::post('/admin/banner/','Banner@add_banner');
+    Route::get('/admin/banner_delete/{id}','Banner@delete_banner')->name('delete_banner');
 
 });
 //      Frontend Controller

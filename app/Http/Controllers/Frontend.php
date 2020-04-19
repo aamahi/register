@@ -9,10 +9,11 @@ use Illuminate\Http\Request;
 class Frontend extends Controller
 {
     public function home(){
+        $sliders = \App\Model\Banner::all();
         $testimonials = \App\Model\Testimonial::all();
         $latest_product =\App\Model\Product::latest()->paginate('8');
         $all_category = \App\Model\Category::select('id','category_name','category_image','author_id','created_at')->get();
-        return view('frontend.home',compact('all_category','testimonials','latest_product'));
+        return view('frontend.home',compact('all_category','testimonials','latest_product','sliders'));
     }
     public function contact(){
         return view('frontend.contact');
