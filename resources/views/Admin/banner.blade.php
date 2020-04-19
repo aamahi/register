@@ -11,7 +11,7 @@
                 <div class="col-sm-8">
                     <section class="card">
                         <header class="card-header">
-                           Teastimonial List
+                           Banner List
                         </header>
                         <table class="table table-hover">
                             <thead>
@@ -42,7 +42,7 @@
 
                     <section class="card">
                         <header class="card-header no-border">
-                            Add Clint Descripting
+                            Add Banner Section
                         </header>
                         <div class="card-body">
                             @if($errors->any())

@@ -42,4 +42,24 @@ class Banner extends Controller
         );
         return redirect()->back()->with($notification);
     }
+    public function deleted_slider(){
+        $delete_slider = \App\Model\Banner::onlyTrashed()->get();
+        return view('Admin.deleted_slider',compact('delete_slider'));
+    }
+    public function restore_banner($id){
+        $restore_banner = \App\Model\Banner::withTrashed()->find($id)->restore();
+        $notification = array(
+            'message' => "Banner Restored",
+            'alert-type' => 'info'
+        );
+        return redirect()->route('admin.banner')->with($notification);
+    }
+    public function d_slider($id){
+        $restore_banner = \App\Model\Banner::withTrashed()->find($id)->forceDelete();
+        $notification = array(
+            'message' => "Banner Deleted Sucessfully!",
+            'alert-type' => 'error'
+        );
+        return redirect()->back()->with($notification);
+    }
 }

@@ -25,7 +25,7 @@
                 </a>
                 <ul class="sub">
                     <li><a  href="{{route('admin.banner')}}">Banner List</a></li>
-                    <li><a  href="{{route('deleted_blog')}}">Deleted Banner</a></li>
+                    <li><a  href="{{route('delete_slider')}}">Deleted Banner</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
