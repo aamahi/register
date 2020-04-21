@@ -55,7 +55,9 @@ class Banner extends Controller
         return redirect()->route('admin.banner')->with($notification);
     }
     public function d_slider($id){
-        $restore_banner = \App\Model\Banner::withTrashed()->find($id)->forceDelete();
+        $restore_banner = \App\Model\Banner::withTrashed()->find($id);
+        unlink("Uploads/Banner/".$restore_banner->photo);
+        $restore_banner->forceDelete();
         $notification = array(
             'message' => "Banner Deleted Sucessfully!",
             'alert-type' => 'error'

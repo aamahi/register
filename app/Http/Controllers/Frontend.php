@@ -55,4 +55,7 @@ class Frontend extends Controller
         $related_product = \App\Model\Product::where('category_id',$category_id)->where('id','!=',$id)->latest()->paginate(4);
         return view('frontend.product_details',compact('product_details','related_product'));
     }
+    public function shop(){
+        return view('frontend.shop');
+    }
 }

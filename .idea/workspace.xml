@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/deleted_slider.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/banner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/banner.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/content/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/content/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Uploads/Banner/banner_20200419_05055116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Uploads/Banner/banner_20200419_06051015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Uploads/Banner/banner_20200419_0617531.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +190,9 @@
       <workItem from="1587157356380" duration="8427000" />
       <workItem from="1587208907932" duration="18246000" />
       <workItem from="1587291966998" duration="6601000" />
-      <workItem from="1587334978472" duration="1521000" />
+      <workItem from="1587334978472" duration="1887000" />
+      <workItem from="1587384272820" duration="608000" />
+      <workItem from="1587478769941" duration="856000" />
     </task>
     <servers />
   </component>
@@ -228,10 +232,10 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587214756538" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587336878769">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587485125485">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587336878769" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587485125485" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
