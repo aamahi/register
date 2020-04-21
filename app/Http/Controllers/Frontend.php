@@ -56,6 +56,8 @@ class Frontend extends Controller
         return view('frontend.product_details',compact('product_details','related_product'));
     }
     public function shop(){
-        return view('frontend.shop');
+        $categories = \App\Model\Category::all();
+        $products = \App\Model\Product::all();
+        return view('frontend.shop',compact('categories','products'));
     }
 }
