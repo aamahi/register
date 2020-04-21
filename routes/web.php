@@ -67,6 +67,7 @@ Route::get('/blog/details/{id}','Frontend@blog_details')->name('blog_details');
 Route::get('/product/details/{id}','Frontend@product_details')->name('product_detailse');
 
 Route::get('/contact','Frontend@contact')->name('contact');
+Route::get('/about','Frontend@about')->name('about');
 Route::get('/shop','Frontend@shop')->name('shop');
 Route::post('/contact','Frontend@contact_send');
 

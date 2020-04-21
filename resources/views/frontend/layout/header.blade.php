@@ -56,42 +56,21 @@
                 <div class="col-lg-7 d-none d-lg-block">
                     <nav class="mainmenu">
                         <ul class="d-flex">
-                            <li class="active"><a href="{{url('')}}">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li>
+                            <li class="@yield('home')">
+                                <a href="{{url('')}}">Home</a>
+                            </li>
+                            <li class="@yield('about')">
+                                <a href="{{route('about')}}">About</a>
+                            </li>
+                            <li class="@yield('shop')">
                                 <a href="{{route('shop')}}">Shop </a>
                             </li>
-                            <li>
-                                <a href="javascript:void(0);">Pages <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown_style">
-                                    <li class="=t" style="margin-left: 30px;"><a href="faq.html">FAQ</a> <br><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"></li>
-                                    <li class="float-left" style="margin-left: 30px;><a href="faq.html">FAQ</a> <br><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"></li>
-                                    <li class="float-left" style="margin-left: 30px;><a href="faq.html">FAQ</a> <br><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"></li>
-                                    <li class="float-left" style="margin-left: 30px;><a href="faq.html">FAQ</a> <br><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Pages <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown_style">
-                                    <li class="nav-item">
-                                        <div class="yamm-content">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Anim pariatur</a></div>
-{{--                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Reprehenderit</a></div>--}}
-{{--                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Keffiyeh helvetica</a></div>--}}
-{{--                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Pariatur cliche</a></div>--}}
-{{--                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Food truck quinoa</a></div>--}}
-                                                <div class="col-xs-6 col-sm-2"><a href="#" class="m-thumb"><img class="mt-3"  src="{{asset('frontend/images/cart/3.jpg')}}"> Leggings occaecat craft</a></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
+                            <li class="@yield('blog')">
                                 <a href="{{route('blog')}}">Blog</a>
-{{--                                <a href="{{route('blog')}}">Blog <i class="fa fa-angle-down"></i></a>--}}
                             </li>
-                            <li><a href="{{route('contact')}}">Contact</a></li>
+                            <li class="@yield('contact')">
+                                <a href="{{route('contact')}}">Contact</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>

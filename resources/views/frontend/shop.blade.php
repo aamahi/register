@@ -1,4 +1,7 @@
 @extends('frontend.layout.index')
+@section('shop')
+    active
+@endsection
 @section('content')
     <!-- .breadcumb-area start -->
     <div class="breadcumb-area bg-img-4 ptb-100">
@@ -8,7 +11,7 @@
                     <div class="breadcumb-wrap text-center">
                         <h2>Shop Page</h2>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{{url('/')}}">Home</a></li>
                             <li><span>Shop</span></li>
                         </ul>
                     </div>

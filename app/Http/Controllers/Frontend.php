@@ -60,4 +60,8 @@ class Frontend extends Controller
         $products = \App\Model\Product::all();
         return view('frontend.shop',compact('categories','products'));
     }
+    public function about(){
+        $all_category = \App\Model\Category::select('id','category_name','category_image','author_id','created_at')->get();
+        return view('frontend.about',compact('all_category'));
+    }
 }

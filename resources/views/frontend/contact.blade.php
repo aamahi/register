@@ -1,4 +1,7 @@
 @extends('frontend.layout.index')
+@section('contact')
+    active
+@endsection
 @section('content')
     <div class="breadcumb-area bg-img-4 ptb-100">
         <div class="container">

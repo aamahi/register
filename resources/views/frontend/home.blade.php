@@ -1,4 +1,7 @@
 @extends('frontend.layout.index')
+@section('home')
+    active
+@endsection
 @section('content')
     <!-- slider-area start -->
     @include('frontend.content.slider')
