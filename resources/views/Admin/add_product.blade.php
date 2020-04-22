@@ -51,7 +51,10 @@
                                     <label for="photo">Photo</label>
                                     <input type="file" class="form-control" id="photo" name="photo">
                                 </div>
-                                
+                                <div class="form-group">
+                                    <label for="multiple_photo">Multiple Photo</label>
+                                    <input type="file" class="form-control" id="multiple_photo" name="multiple_photo[]" multiple>
+                                </div>
 
                                 <button type="submit" class="btn btn-primary">Add Product</button>
                             </form>

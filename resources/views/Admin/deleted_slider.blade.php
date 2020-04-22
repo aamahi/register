@@ -30,7 +30,7 @@
                                 <td>{{Str::limit($slider->description,39)}}</td>
                                 <td>
                                     <a href="{{route('restore_banner',$slider->id)}}" class="btn btn-info"> <i class="fa fa-reply"></i> </a>
-                                    <a href="{{route('d_slider',$slider->id)}}" class="btn btn-danger"><i class="fa fa-trash-o"></i></a>
+                                    <a href="{{route('d_slider',$slider->id)}}" class="btn btn-danger delete"><i class="fa fa-trash-o"></i></a>
                                 </td>
                             </tr>
                             @endforeach

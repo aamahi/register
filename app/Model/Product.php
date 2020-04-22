@@ -22,4 +22,7 @@ class Product extends Model
     public function category(){
         return $this->hasOne(Category::class,'id','category_id');
     }
+    public function multiple_photos(){
+        return $this->hasMany(Multiple_photo::class,'product_id','id');
+    }
 }

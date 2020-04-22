@@ -30,41 +30,21 @@
                             <div class="item">
                                 <img src="{{asset('Uploads/Products/'.$product_details->photo)}}" alt="">
                             </div>
-                            <div class="item">
-                                <img src="assets/images/product/product-details/2.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="assets/images/product/product-details/3.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="assets/images/product/product-details/4.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="assets/images/product/product-details/5.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="assets/images/product/product-details/6.jpg" alt="">
-                            </div>
+                            @foreach($product_details->multiple_photos as $multiple_photo)
+                                <div class="item">
+                                    <img src="{{asset('Uploads/Multiple_photo/'.$multiple_photo->multiple_photo)}}" alt="">
+                                </div>
+                            @endforeach
                         </div>
                         <div class="product-thumbnil-active  owl-carousel">
                             <div class="item">
-                                <img src="assets/images/product/product-details/1.jpg" alt="">
+                                <img src="{{asset('Uploads/Products/'.$product_details->photo)}}" alt="">
                             </div>
-                            <div class="item">
-                                <img src="assets/images/product/product-details/2.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="assets/images/product/product-details/3.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="assets/images/product/product-details/4.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="assets/images/product/product-details/5.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="assets/images/product/product-details/6.jpg" alt="">
-                            </div>
+                            @foreach($product_details->multiple_photos as $multiple_photo)
+                                <div class="item">
+                                    <img src="{{asset('Uploads/Multiple_photo/'.$multiple_photo->multiple_photo)}}" alt="">
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -92,6 +72,7 @@
                         <ul class="cetagory">
                             <li>Category  : </li>
                             <li><a href="#">{{($product_details->category)->category_name}}</a></li>
+{{--                            <li><a href="#">{{($product_details->multiple_photos)->multiple_photo}}</a></li>--}}
                         </ul>
                         <ul class="socil-icon">
                             <li>Share :</li>

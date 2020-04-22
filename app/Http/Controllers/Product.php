@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Multiple_photo;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
@@ -42,11 +43,25 @@ class Product extends Controller
         $product['photo']= $image;
         $product['created_at']= Carbon::now();
 
-        $add_product = \App\Model\Product::insert($product);
+        $product_id = \App\Model\Product::insertGetId($product);
         $notification = array(
             'message' => "Product Added Sucessfully !",
             'alert-type' => 'success'
         );
+        $flag =1;
+        foreach ($request->file('multiple_photo') as $multiple_photo) {
+            $multiple_photo_extension =  $multiple_photo->getClientOriginalExtension();
+            $image = "multiple_photo_".date('Ymd_his_').rand(1,100).$flag.".".$multiple_photo_extension;
+            $upload_location = base_path('public/Uploads/Multiple_photo/'.$image);
+            Image::make($multiple_photo)->resize('540','495')->save($upload_location);
+            echo $image."<br/>";
+            $flag++;
+            $multiple =[];
+            $multiple['product_id'] = $product_id;
+            $multiple['multiple_photo'] = $image;
+            $multiple['created_at'] = Carbon::now();
+            Multiple_photo::insert($multiple);
+        }
         return redirect()->route('admin.product')->with($notification);
     }
 }
