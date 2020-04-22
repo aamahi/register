@@ -68,6 +68,8 @@ class Product extends Controller
     public function product_view($id){
         $categories = \App\Model\Category::select('category_name','id')->get();
         $product = \App\Model\Product::with('category','multiple_photos')->find($id);
-        return view('Admin.product_view',compact('product','categories'));
+        $category_id =\App\Model\Product::with('category')->find($id)->category_id;
+        $related_product = \App\Model\Product::where('category_id',$category_id)->where('id','!=',$id)->latest()->paginate(3);
+        return view('Admin.product_view',compact('product','categories','related_product'));
     }
 }

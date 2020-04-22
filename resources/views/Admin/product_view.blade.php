@@ -152,63 +152,27 @@
                     </section>
 
                     <div class="row product-list">
-                        <div class="col-md-4">
+                        @foreach($related_product as $product)
+                            <div class="col-md-4">
                             <section class="card">
                                 <div class="pro-img-box">
-                                    <img src="img/product-list/pro-1.jpg" alt=""/>
-                                    <a href="#" class="adtocart">
-                                        <i class="fa fa-shopping-cart"></i>
+                                    <img src="{{asset("Uploads/Products/".$product->photo)}}" alt=""/>
+                                    <a href="{{route('product_view',$product->id)}}" class="adtocart">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                 </div>
 
                                 <div class="card-body text-center">
                                     <h4>
                                         <a href="#" class="pro-title">
-                                            Leopard Shirt Dress
+                                            {{$product->product_name}}
                                         </a>
                                     </h4>
-                                    <p class="price">$300.00</p>
+                                    <p class="price">{{$product->price}}.00 taka</p>
                                 </div>
                             </section>
                         </div>
-                        <div class="col-md-4">
-                            <section class="card">
-                                <div class="pro-img-box">
-                                    <img src="img/product-list/pro1.jpg" alt=""/>
-                                    <a href="#" class="adtocart">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </a>
-                                </div>
-
-                                <div class="card-body text-center">
-                                    <h4>
-                                        <a href="#" class="pro-title">
-                                            Leopard Shirt Dress
-                                        </a>
-                                    </h4>
-                                    <p class="price">$300.00</p>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="col-md-4">
-                            <section class="card">
-                                <div class="pro-img-box">
-                                    <img src="img/product-list/pro2.jpg" alt=""/>
-                                    <a href="#" class="adtocart">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </a>
-                                </div>
-
-                                <div class="card-body text-center">
-                                    <h4>
-                                        <a href="#" class="pro-title">
-                                            Leopard Shirt Dress
-                                        </a>
-                                    </h4>
-                                    <p class="price">$300.00</p>
-                                </div>
-                            </section>
-                        </div>
+                        @endforeach
 
                     </div>
                 </div>
