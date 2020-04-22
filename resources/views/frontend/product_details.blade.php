@@ -64,10 +64,14 @@
                         </div>
                         <p>{{Str::limit($product_details->decription,100)}}</p>
                         <ul class="input-style">
-                            <li class="quantity cart-plus-minus">
-                                <input type="text" value="1" />
-                            </li>
-                            <li><a href="cart.html">Add to Cart</a></li>
+                            <form action="{{url('/add_cart')}}" method="post">
+                                @csrf
+                                <input type="hidden" name="product_id" value="{{$product_details->id}}">
+                                <li class="quantity cart-plus-minus">
+                                    <input type="text" name ="quantity" value="1" />
+                                </li>
+                                <li><button class="btn btn-danger" type="submit">Add to Cart</button></li>
+                            </form>
                         </ul>
                         <ul class="cetagory">
                             <li>Category  : </li>

@@ -64,4 +64,8 @@ class Frontend extends Controller
         $all_category = \App\Model\Category::select('id','category_name','category_image','author_id','created_at')->get();
         return view('frontend.about',compact('all_category'));
     }
+    public function cart(){
+        $carts = \App\Model\Cart::with('products')->where('ip_address',request()->ip())->get();
+        return view('frontend.cart',compact('carts'));
+    }
 }

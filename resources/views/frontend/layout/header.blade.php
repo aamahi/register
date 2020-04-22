@@ -109,42 +109,24 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript:void(0);"><i class="flaticon-shop"></i> <span>3</span></a>
+
+                            <a href="javascript:void(0);"><i class="flaticon-shop"></i> <span>{{\App\Model\Cart::where('ip_address',request()->ip())->count()}}</span></a>
                             <ul class="cart-wrap dropdown_style">
-                                <li class="cart-items">
-                                    <div class="cart-img">
-                                        <img src="{{asset('frontend/images/cart/1.jpg')}}" alt="">
-                                    </div>
-                                    <div class="cart-content">
-                                        <a href="cart.html">Pure Nature Product</a>
-                                        <span>QTY : 1</span>
-                                        <p>$35.00</p>
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </li>
-                                <li class="cart-items">
-                                    <div class="cart-img">
-                                        <img src="{{asset('frontend/images/cart/3.jpg')}}" alt="">
-                                    </div>
-                                    <div class="cart-content">
-                                        <a href="cart.html">Pure Nature Product</a>
-                                        <span>QTY : 1</span>
-                                        <p>$35.00</p>
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </li>
-                                <li class="cart-items">
-                                    <div class="cart-img">
-                                        <img src="{{asset('frontend/images/cart/2.jpg')}}" alt="">
-                                    </div>
-                                    <div class="cart-content">
-                                        <a href="cart.html">Pure Nature Product</a>
-                                        <span>QTY : 1</span>
-                                        <p>$35.00</p>
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </li>
-                                <li>Subtotol: <span class="pull-right">$70.00</span></li>
+                                @foreach(\App\Model\Cart::with('products')->where('ip_address',request()->ip())->get() as $cart)
+
+                                    <li class="cart-items">
+                                        <div class="cart-img">
+                                            <img width="65" src="{{asset('Uploads/Products/'.($cart->products)->photo)}}" alt="">
+                                        </div>
+                                        <div class="cart-content">
+                                            <a href="">{{($cart->products)->product_name}}</a>
+                                            <span>QTY : {{$cart->quantity}}</span>
+                                            <p>{{($cart->products)->price*$cart->quantity}}.00 tk</p>
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                    </li>
+                                @endforeach
+                                <li>Subtotol: <span class="pull-right">00.00Taka</span></li>
                                 <li>
                                     <button>Check Out</button>
                                 </li>

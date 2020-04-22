@@ -74,7 +74,7 @@
                                 <div class="pro-img-list">
                                     @foreach($product->multiple_photos as $multiple_photo)
                                         <a href="#">
-                                            <img width="90" src="{{asset('Uploads/Multiple_photo/'.$multiple_photo->multiple_photo)}}" alt="">
+                                            <img width="65" src="{{asset('Uploads/Multiple_photo/'.$multiple_photo->multiple_photo)}}" alt="">
                                         </a>
                                     @endforeach
                                 </div>

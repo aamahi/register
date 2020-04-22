@@ -19,7 +19,12 @@
                             <ul>
                                 <li><a data-toggle="modal" data-target="#exampleModalCenter" href="javascript:void(0);"><i class="fa fa-eye"></i></a></li>
                                 <li><a href="wishlist.html"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+                                <form action="{{route('add_cart')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="product_id" value="{{$product->id}}">
+                                    <input type="hidden" name="quantity" value="1">
+                                    <li><button type="submit" class="btn btn-outline-danger"><i class="fa fa-shopping-bag"></i></button></li>
+                                </form>
                             </ul>
                         </div>
                     </div>
