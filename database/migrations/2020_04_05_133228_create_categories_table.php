@@ -20,6 +20,7 @@ class CreateCategoriesTable extends Migration
             $table->string('category_image');
             $table->softDeletes();
             $table->timestamps();
+
         });
     }
 

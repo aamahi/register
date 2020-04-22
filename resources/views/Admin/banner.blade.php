@@ -23,7 +23,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($all_banner as $banner)
+                            @forelse($all_banner as $banner)
                             <tr>
                                 <td><img width="50" src="{{asset('Uploads/Banner/'.$banner->photo)}}"></td>
                                 <td>{{$banner->banner_title}}</td>
@@ -33,7 +33,9 @@
                                     <a href="{{route('delete_banner',$banner->id)}}" class="btn btn-danger delete"><i class="fa fa-trash-o"></i></a>
                                 </td>
                             </tr>
-                            @endforeach
+                            @empty
+                                Nai
+                            @endforelse
                             </tbody>
                         </table>
                     </section>

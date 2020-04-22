@@ -125,8 +125,13 @@ class Category extends Controller
     }
     public function deletd_category($id){
         $restore_category = \App\Model\Category::withTrashed()->find($id);
+//        echo $restore_category->id;
         unlink('Uploads/Category/'.$restore_category->category_image);
         $restore_category->forceDelete();
+        $delete_product = \App\Model\Product::where('category_id',$restore_category->id)->get();
+        foreach($delete_product as $pro){
+            echo $pro;
+        }
         $notification = array(
             'message' => "Category Deleted ",
             'alert-type' => 'error'
