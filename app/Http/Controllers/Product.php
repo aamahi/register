@@ -64,4 +64,10 @@ class Product extends Controller
         }
         return redirect()->route('admin.product')->with($notification);
     }
+
+    public function product_view($id){
+        $categories = \App\Model\Category::select('category_name','id')->get();
+        $product = \App\Model\Product::with('category','multiple_photos')->find($id);
+        return view('Admin.product_view',compact('product','categories'));
+    }
 }

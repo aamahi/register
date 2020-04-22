@@ -49,6 +49,7 @@ Route::group(['middleware'=>['auth','verified']],function (){
     Route::get('/admin/product/','Product@product')->name('admin.product');
     Route::get('/add/product/','Product@add_product')->name('add_product');
     Route::post('/add/product/','Product@add_product_pro');
+    Route::get('/product_view/{id}','Product@product_view')->name('product_view');
 
     // Product
     Route::get('/admin/banner/','Banner@banner')->name('admin.banner');

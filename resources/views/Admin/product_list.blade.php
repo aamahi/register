@@ -103,13 +103,13 @@
 
                                 <div class="card-body text-center">
                                     <h4>
-                                        <a href="#" class="pro-title">
+                                        <a href="{{route('product_view',$product->id)}}" class="pro-title">
                                             {{$product->product_name}}
                                         </a>
                                     </h4>
                                     <p class="price">{{$product->price}}.00 taka</p>
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-info"> <i class="fa fa-eye"></i></button>
+                                        <a href="{{route('product_view',$product->id)}}" class="btn btn-info"> <i class="fa fa-eye"></i></a>
                                         <button type="button" class="btn btn-success"> <i class="fa fa-pencil"></i></button>
                                         <button type="button" class="btn btn-danger"> <i class="fa fa-trash-o"></i></button>
                                     </div>
