@@ -68,4 +68,8 @@ class Frontend extends Controller
         $carts = \App\Model\Cart::with('products')->where('ip_address',request()->ip())->get();
         return view('frontend.cart',compact('carts'));
     }
+    public function wish(){
+        $wishes = \App\Model\Wish::with('products')->where('ip_address',request()->ip())->get();
+        return view('frontend.wish',compact('wishes'));
+    }
 }

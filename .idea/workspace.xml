@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/cart.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/wish.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/product_view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/product_view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/product_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/product_list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/content/product_area.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/content/product_area.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/product_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/product_details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -197,7 +196,7 @@
       <workItem from="1587478769941" duration="13217000" />
       <workItem from="1587549299606" duration="598000" />
       <workItem from="1587569912519" duration="5415000" />
-      <workItem from="1587590479411" duration="6874000" />
+      <workItem from="1587590479411" duration="10388000" />
     </task>
     <servers />
   </component>
@@ -241,10 +240,10 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587214756538" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587598222264">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587602105956">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587598222264" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587602105956" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -301,7 +300,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php</url>
-          <line>120</line>
+          <line>112</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

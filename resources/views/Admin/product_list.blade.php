@@ -110,8 +110,8 @@
                                     <p class="price">{{$product->price}}.00 taka</p>
                                     <div class="btn-group" role="group" aria-label="Basic example">
                                         <a href="{{route('product_view',$product->id)}}" class="btn btn-info"> <i class="fa fa-eye"></i></a>
-                                        <button type="button" class="btn btn-success"> <i class="fa fa-pencil"></i></button>
-                                        <button type="button" class="btn btn-danger"> <i class="fa fa-trash-o"></i></button>
+                                        <a href="{{route('product_view',$product->id)}}" class="btn btn-success"> <i class="fa fa-pencil"></i></a>
+                                        <a href="{{route('product_view',$product->id)}}" class="btn btn-danger"> <i class="fa fa-trash-o"></i></a>
                                     </div>
                                 </div>
 

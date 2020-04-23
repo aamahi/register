@@ -71,10 +71,12 @@ Route::get('/contact','Frontend@contact')->name('contact');
 Route::get('/about','Frontend@about')->name('about');
 Route::get('/shop','Frontend@shop')->name('shop');
 Route::get('/cart','Frontend@cart')->name('cart');
+Route::get('/wish','Frontend@wish')->name('wish');
 Route::post('/contact','Frontend@contact_send');
 
 Route::post('/comment','Comment@send');
 Route::post('/add_cart','Cart@add_cart')->name('add_cart');
+Route::post('/add_wish','Wish@add_wish')->name('add_wish');
 //      AUTH ROUTE
 Auth::routes(['verify' => true]);
 

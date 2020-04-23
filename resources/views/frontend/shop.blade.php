@@ -51,7 +51,11 @@
                                         <div class="product-icon flex-style">
                                             <ul>
                                                 <li><a data-toggle="modal" data-target="#exampleModalCenter" href="javascript:void(0);"><i class="fa fa-eye"></i></a></li>
-                                                <li><a href="wishlist.html"><i class="fa fa-heart"></i></a></li>
+                                                <form action="{{route('add_wish')}}" method="post">
+                                                    @csrf
+                                                    <input type="hidden" name="product_id" value="{{$product->id}}">
+                                                    <li><button type="submit" class="btn btn-outline-danger"><i class="fa fa-heart"></i></button></li>
+                                                </form>
                                                 <form action="{{route('add_cart')}}" method="post">
                                                     @csrf
                                                     <input type="hidden" name="product_id" value="{{$product->id}}">
@@ -91,7 +95,11 @@
                                             <div class="product-icon flex-style">
                                                 <ul>
                                                     <li><a data-toggle="modal" data-target="#exampleModalCenter" href="javascript:void(0);"><i class="fa fa-eye"></i></a></li>
-                                                    <li><a href="wishlist.html"><i class="fa fa-heart"></i></a></li>
+                                                    <form action="{{route('add_wish')}}" method="post">
+                                                        @csrf
+                                                        <input type="hidden" name="product_id" value="{{$product->id}}">
+                                                        <li><button type="submit" class="btn btn-outline-danger"><i class="fa fa-heart"></i></button></li>
+                                                    </form>
                                                     <form action="{{route('add_cart')}}" method="post">
                                                         @csrf
                                                         <input type="hidden" name="product_id" value="{{$product->id}}">

@@ -78,30 +78,22 @@
                     <ul class="search-cart-wrapper d-flex">
                         <li class="search-tigger"><a href="javascript:void(0);"><i class="flaticon-search"></i></a></li>
                         <li>
-                            <a href="javascript:void(0);"><i class="flaticon-like"></i> <span>2</span></a>
+                            <a href="javascript:void(0);"><i class="flaticon-like"></i> <span>{{\App\Model\Wish::where('ip_address',request()->ip())->count()}}</span></a>
                             <ul class="cart-wrap dropdown_style">
+                                @forelse(\App\Model\Wish::where('ip_address',request()->ip())->get() as $wish)
                                 <li class="cart-items">
                                     <div class="cart-img">
-                                        <img src="{{asset('frontend/images/cart/1.jpg')}}" alt="">
+                                        <img width="65" src="{{asset("Uploads/Products/".($wish->products)->photo)}}" alt="">
                                     </div>
                                     <div class="cart-content">
-                                        <a href="cart.html">Pure Nature Product</a>
-                                        <span>QTY : 1</span>
-                                        <p>$35.00</p>
+                                        <a href="cart.html">{{($wish->products)->product_name}}</a>
+                                        <p>{{($wish->products)->price}}.00 tk</p>
                                         <i class="fa fa-times"></i>
                                     </div>
                                 </li>
-                                <li class="cart-items">
-                                    <div class="cart-img">
-                                        <img src="{{asset('frontend/images/cart/3.jpg')}}" alt="">
-                                    </div>
-                                    <div class="cart-content">
-                                        <a href="cart.html">Pure Nature Product</a>
-                                        <span>QTY : 1</span>
-                                        <p>$35.00</p>
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </li>
+                                @empty
+                                    NO Product Add To Wishlist
+                                @endforelse
                                 <li>Subtotol: <span class="pull-right">$70.00</span></li>
                                 <li>
                                     <button>Check Out</button>
