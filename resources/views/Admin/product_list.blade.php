@@ -111,7 +111,7 @@
                                     <div class="btn-group" role="group" aria-label="Basic example">
                                         <a href="{{route('product_view',$product->id)}}" class="btn btn-info"> <i class="fa fa-eye"></i></a>
                                         <a href="{{route('product_view',$product->id)}}" class="btn btn-success"> <i class="fa fa-pencil"></i></a>
-                                        <a href="{{route('product_view',$product->id)}}" class="btn btn-danger"> <i class="fa fa-trash-o"></i></a>
+                                        <a href="{{route('product_delete',$product->id)}}" class="btn btn-danger delete"> <i class="fa fa-trash-o"></i></a>
                                     </div>
                                 </div>
 

@@ -43,7 +43,7 @@
                                     <td class="images"><img src="{{asset("Uploads/Products/".($wish->products)->photo)}}" alt=""></td>
                                     <td class="product"><a href="single-product.html">{{($wish->products)->product_name}}</a></td>
                                     <td class="ptice">{{($wish->products)->price}}</td>
-                                    <form action="{{route('add_cart')}}" method="post">
+                                    <form action="{{url('add_cart')}}" method="post">
                                         @csrf
                                             <input type="hidden" name="product_id" value="{{($wish->products)->id}}">
                                         <td class="quantity cart-plus-minus">

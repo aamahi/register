@@ -44,10 +44,6 @@ class Product extends Controller
         $product['created_at']= Carbon::now();
 
         $product_id = \App\Model\Product::insertGetId($product);
-        $notification = array(
-            'message' => "Product Added Sucessfully !",
-            'alert-type' => 'success'
-        );
         $flag =1;
         foreach ($request->file('multiple_photo') as $multiple_photo) {
             $multiple_photo_extension =  $multiple_photo->getClientOriginalExtension();
@@ -62,6 +58,10 @@ class Product extends Controller
             $multiple['created_at'] = Carbon::now();
             Multiple_photo::insert($multiple);
         }
+        $notification = array(
+            'message' => "Product Added Sucessfully !",
+            'alert-type' => 'success'
+        );
         return redirect()->route('admin.product')->with($notification);
     }
 
@@ -71,5 +71,13 @@ class Product extends Controller
         $category_id =\App\Model\Product::with('category')->find($id)->category_id;
         $related_product = \App\Model\Product::where('category_id',$category_id)->where('id','!=',$id)->latest()->paginate(3);
         return view('Admin.product_view',compact('product','categories','related_product'));
+    }
+    public function product_delete($id){
+        $product_delete = \App\Model\Product::find($id)->delete();
+        $notification = array(
+            'message' => "Product Deleted Temporay!",
+            'alert-type' => 'error'
+        );
+        return redirect()->route('admin.product')->with($notification);
     }
 }

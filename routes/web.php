@@ -50,6 +50,7 @@ Route::group(['middleware'=>['auth','verified']],function (){
     Route::get('/add/product/','Product@add_product')->name('add_product');
     Route::post('/add/product/','Product@add_product_pro');
     Route::get('/product_view/{id}','Product@product_view')->name('product_view');
+    Route::get('/product_delete/{id}','Product@product_delete')->name('product_delete');
 
     // Product
     Route::get('/admin/banner/','Banner@banner')->name('admin.banner');
