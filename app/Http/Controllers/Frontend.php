@@ -73,3 +73,14 @@ class Frontend extends Controller
         return view('frontend.wish',compact('wishes'));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
