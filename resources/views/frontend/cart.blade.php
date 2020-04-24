@@ -47,7 +47,7 @@
                                     <input type="text" value="{{$cart->quantity}}" />
                                 </td>
                                 <td class="total">{{($cart->products)->price*$cart->quantity}}</td>
-                                <td class="remove"><i class="fa fa-times"></i></td>
+                                <td class="remove"><a href="{{route('cart_remove',($cart->products)->id)}}"><i class="fa fa-times"></i></a></td>
                             </tr>
                             @endforeach
                             </tbody>

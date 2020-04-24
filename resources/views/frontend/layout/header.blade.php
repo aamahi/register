@@ -96,7 +96,7 @@
                                 @endforelse
                                 <li>Subtotol: <span class="pull-right">$70.00</span></li>
                                 <li>
-                                    <button>Check Out</button>
+                                    <a href="{{route('wish')}}"><button>WishList</button></a>
                                 </li>
                             </ul>
                         </li>
@@ -120,7 +120,7 @@
                                 @endforeach
                                 <li>Subtotol: <span class="pull-right">00.00Taka</span></li>
                                 <li>
-                                    <button>Check Out</button>
+                                    <a href="{{route('cart')}}"><button>Got to Cart</button></a>
                                 </li>
                             </ul>
                         </li>

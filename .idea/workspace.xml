@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +131,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -201,6 +205,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="278" y="58" width="800" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587743885003">
+      <screen x="0" y="25" width="1366" height="743" />
+    </state>
+    <state x="278" y="58" width="800" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1366.743@0.25.1366.743" timestamp="1587743885003" />
     <state x="238" y="201" width="880" height="389" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587233140335">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
@@ -237,10 +245,10 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587214756538" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587742252658">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587742895123">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587742252658" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587742895123" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

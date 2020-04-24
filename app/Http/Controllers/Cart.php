@@ -23,5 +23,8 @@ class Cart extends Controller
         );
         return redirect()->back()->with($notification);
     }
+   public function cart_remove($id){
+        echo $id;
+   }
 
 }
