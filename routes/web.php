@@ -52,13 +52,20 @@ Route::group(['middleware'=>['auth','verified']],function (){
     Route::get('/product_view/{id}','Product@product_view')->name('product_view');
     Route::get('/product_delete/{id}','Product@product_delete')->name('product_delete');
 
-    // Product
+    // Banner
     Route::get('/admin/banner/','Banner@banner')->name('admin.banner');
     Route::post('/admin/banner/','Banner@add_banner');
     Route::get('/admin/banner_delete/{id}','Banner@delete_banner')->name('delete_banner');
     Route::get('/admin/restore_banner/{id}','Banner@restore_banner')->name('restore_banner');
     Route::get('/admin/d_slider/{id}','Banner@d_slider')->name('d_slider');
     Route::get('/admin/slider_delete/','Banner@deleted_slider')->name('delete_slider');
+
+    //Cupon
+
+    Route::get('/admin/cupon/',"Cupon@cupon")->name('cupon');
+    Route::post('/admin/cupon/',"Cupon@add_cupon");
+    Route::get('/delete/cupon/{id}',"Cupon@delete_cupon")->name('delete_cupon');
+
 
 });
 //      Frontend Controller
