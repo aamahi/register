@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="" />
+    <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Banner/banner_20200425_0726356.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Banner/banner_20200425_07281515.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Blog/blogphoto20200425_074454_16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Blog/blogphoto20200425_074526_13.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Category/categoryImage_20200425_072916_26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Category/categoryImage_20200425_072953_29.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Multiple_photo/multiple_photo_20200425_074246_121.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Multiple_photo/multiple_photo_20200425_074247_692.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Multiple_photo/multiple_photo_20200425_074247_933.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Products/product_20200425_074246_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Testimonial/clintimage_202025040733_59_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Uploads/Testimonial/clintimage_202025040734_51_7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Wish.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Wish.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/wish.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/wish.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,10 +146,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../inventory" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -193,6 +214,7 @@
       <workItem from="1587656453629" duration="597000" />
       <workItem from="1587737438416" duration="721000" />
       <workItem from="1587746913457" duration="546000" />
+      <workItem from="1587840057870" duration="2258000" />
     </task>
     <servers />
   </component>
@@ -240,10 +262,10 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587214756538" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587742895123">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587842566975">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587742895123" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587842566975" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -300,7 +322,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php</url>
-          <line>112</line>
+          <line>121</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

@@ -80,21 +80,27 @@
                         <li>
                             <a href="javascript:void(0);"><i class="flaticon-like"></i> <span>{{\App\Model\Wish::where('ip_address',request()->ip())->count()}}</span></a>
                             <ul class="cart-wrap dropdown_style">
+                                @php
+                                    $total_price =0;
+                                @endphp
                                 @forelse(\App\Model\Wish::where('ip_address',request()->ip())->get() as $wish)
                                 <li class="cart-items">
                                     <div class="cart-img">
                                         <img width="65" src="{{asset("Uploads/Products/".($wish->products)->photo)}}" alt="">
                                     </div>
                                     <div class="cart-content">
-                                        <a href="cart.html">{{($wish->products)->product_name}}</a>
+                                        <a href="{{route('wish')}}">{{($wish->products)->product_name}}</a>
                                         <p>{{($wish->products)->price}}.00 tk</p>
-                                        <i class="fa fa-times"></i>
+                                        <a href="{{route('wish_remove',$wish->id)}}"><i class="fa fa-times"></i></a>
                                     </div>
                                 </li>
+                                    @php
+                                    $total_price = $total_price +(($wish->products)->price)
+                                    @endphp
                                 @empty
                                     NO Product Add To Wishlist
                                 @endforelse
-                                <li>Subtotol: <span class="pull-right">$70.00</span></li>
+                                <li>Subtotol: <span class="pull-right">{{$total_price}}.00 taka</span></li>
                                 <li>
                                     <a href="{{route('wish')}}"><button>WishList</button></a>
                                 </li>
@@ -104,6 +110,9 @@
 
                             <a href="javascript:void(0);"><i class="flaticon-shop"></i> <span>{{\App\Model\Cart::where('ip_address',request()->ip())->count()}}</span></a>
                             <ul class="cart-wrap dropdown_style">
+                                @php
+                                $total = 0;
+                                @endphp
                                 @foreach(\App\Model\Cart::with('products')->where('ip_address',request()->ip())->get() as $cart)
 
                                     <li class="cart-items">
@@ -111,14 +120,17 @@
                                             <img width="65" src="{{asset('Uploads/Products/'.($cart->products)->photo)}}" alt="">
                                         </div>
                                         <div class="cart-content">
-                                            <a href="">{{($cart->products)->product_name}}</a>
+                                            <a href="{{route('cart')}}">{{($cart->products)->product_name}}</a>
                                             <span>QTY : {{$cart->quantity}}</span>
                                             <p>{{($cart->products)->price*$cart->quantity}}.00 tk</p>
-                                            <i class="fa fa-times"></i>
+                                            <a href="{{route('cart_remove',$cart->id)}}"><i class="fa fa-times"></i></a>
                                         </div>
                                     </li>
+                                    @php
+                                        $total = $total+(($cart->products)->price*$cart->quantity);
+                                    @endphp
                                 @endforeach
-                                <li>Subtotol: <span class="pull-right">00.00Taka</span></li>
+                                <li>Subtotol: <span class="pull-right">{{$total}}.00 taka</span></li>
                                 <li>
                                     <a href="{{route('cart')}}"><button>Got to Cart</button></a>
                                 </li>

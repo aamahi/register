@@ -73,6 +73,7 @@ Route::get('/about','Frontend@about')->name('about');
 Route::get('/shop','Frontend@shop')->name('shop');
 Route::get('/cart','Frontend@cart')->name('cart');
 Route::get('/cart/{id}','Cart@cart_remove')->name('cart_remove');
+Route::get('/wish/{id}','Wish@wish_remove')->name('wish_remove');
 Route::get('/wish','Frontend@wish')->name('wish');
 Route::post('/contact','Frontend@contact_send');
 

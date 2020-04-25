@@ -26,4 +26,8 @@ class Wish extends Controller
             return redirect()->back()->with($notification);
         }
     }
+    public function wish_remove($id){
+        \App\Model\Wish::find($id)->delete();
+        return redirect()->back();
+    }
 }

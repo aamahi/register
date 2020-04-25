@@ -38,7 +38,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($carts as $cart)
+                            @forelse($carts as $cart)
                                 <tr>
                                 <td class="images"><img src="{{asset('Uploads/Products/'.($cart->products)->photo)}}" alt=""></td>
                                 <td class="product"><a href="single-product.html">{{($cart->products)->product_name}}</a></td>
@@ -47,9 +47,15 @@
                                     <input type="text" value="{{$cart->quantity}}" />
                                 </td>
                                 <td class="total">{{($cart->products)->price*$cart->quantity}}</td>
-                                <td class="remove"><a href="{{route('cart_remove',($cart->products)->id)}}"><i class="fa fa-times"></i></a></td>
+                                <td class="remove"><a href="{{route('cart_remove',$cart->id)}}"><i class="fa fa-times"></i></a></td>
                             </tr>
-                            @endforeach
+                            @empty
+
+                                <tr>
+                                    <td col-span="300"> NO Product !</td>
+                                </tr>
+
+                            @endforelse
                             </tbody>
                         </table>
                         <div class="row mt-60">

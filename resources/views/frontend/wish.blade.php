@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <form action="http://themepresss.com/tf/html/tohoney/cart">
+                    <form action="{{url('add_cart')}}" method="post">
                         <table class="table-responsive cart-wrap">
                             <thead>
                             <tr>
@@ -38,7 +38,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($wishes as $wish)
+                            @forelse($wishes as $wish)
                                 <tr>
                                     <td class="images"><img src="{{asset("Uploads/Products/".($wish->products)->photo)}}" alt=""></td>
                                     <td class="product"><a href="single-product.html">{{($wish->products)->product_name}}</a></td>
@@ -53,9 +53,13 @@
                                             <button type="submit" class="btn btn-danger">Add to Cart</button>
                                         </td>
                                     </form>
-                                    <td class="remove"><i class="fa fa-times"></i></td>
+                                    <td class="remove"><a href="{{route('wish_remove',$wish->id)}}"> <i class="fa fa-times"></i> </a></td>
                                 </tr>
-                            @endforeach
+                                @empty
+                                    <tr col="100">
+                                        <td>No Product </td>
+                                    </tr>
+                            @endforelse
                             </tbody>
                         </table>
                     </form>

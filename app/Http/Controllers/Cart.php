@@ -24,7 +24,8 @@ class Cart extends Controller
         return redirect()->back()->with($notification);
     }
    public function cart_remove($id){
-        echo $id;
+        $delete_product_form_cart = \App\Model\Cart::find($id)->delete();
+        return redirect()->back();
    }
 
 }
