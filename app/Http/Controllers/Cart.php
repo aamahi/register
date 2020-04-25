@@ -27,5 +27,14 @@ class Cart extends Controller
         $delete_product_form_cart = \App\Model\Cart::find($id)->delete();
         return redirect()->back();
    }
+   public function update_cart(Request $request){
+       foreach ($request->quantity as $cart_id=>$quantity) {
+               \App\Model\Cart::find($cart_id)->update([
+                   'quantity'=> $quantity,
+               ]);
+
+        }
+       return redirect()->back();
+   }
 
 }

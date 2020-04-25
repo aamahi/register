@@ -79,6 +79,7 @@ Route::post('/contact','Frontend@contact_send');
 
 Route::post('/comment','Comment@send');
 Route::post('/add_cart','Cart@add_cart')->name('add_cart');
+Route::post('/update_cart','Cart@update_cart')->name('update_cart');
 Route::post('/add_wish','Wish@add_wish')->name('add_wish');
 //      AUTH ROUTE
 Auth::routes(['verify' => true]);

@@ -25,7 +25,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <form action="http://themepresss.com/tf/html/tohoney/cart">
+                    <form action="{{route('update_cart')}}" method="post">
+                        @csrf
                         <table class="table-responsive cart-wrap">
                             <thead>
                             <tr>
@@ -44,7 +45,7 @@
                                 <td class="product"><a href="single-product.html">{{($cart->products)->product_name}}</a></td>
                                 <td class="ptice">{{($cart->products)->price}}.00 tk</td>
                                 <td class="quantity cart-plus-minus">
-                                    <input type="text" value="{{$cart->quantity}}" />
+                                    <input type="text" name ='quantity[{{$cart->id}}]' value="{{$cart->quantity}}" />
                                 </td>
                                 <td class="total">{{($cart->products)->price*$cart->quantity}}</td>
                                 <td class="remove"><a href="{{route('cart_remove',$cart->id)}}"><i class="fa fa-times"></i></a></td>
@@ -63,7 +64,7 @@
                                 <div class="cartcupon-wrap">
                                     <ul class="d-flex">
                                         <li>
-                                            <button>Update Cart</button>
+                                            <button type="submit">Update Cart</button>
                                         </li>
                                         <li><a href="shop.html">Continue Shopping</a></li>
                                     </ul>
