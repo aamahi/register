@@ -64,9 +64,34 @@ class Frontend extends Controller
         $all_category = \App\Model\Category::select('id','category_name','category_image','author_id','created_at')->get();
         return view('frontend.about',compact('all_category'));
     }
-    public function cart(){
-        $carts = \App\Model\Cart::with('products')->where('ip_address',request()->ip())->get();
-        return view('frontend.cart',compact('carts'));
+
+    public function cart(Request $request){
+        $cupon_name =$request->cupon_name;
+        if ($cupon_name){
+            if (\App\Model\Cupon::where('cupon_name',$cupon_name)->exists()){
+                if(\App\Model\Cupon::where('cupon_name',$cupon_name)->first()->validity_till>=Carbon::now()->format('Y-m-D')){
+                    $discount = \App\Model\Cupon::where('cupon_name',$cupon_name)->first()->discount;
+                    $carts = \App\Model\Cart::with('products')->where('ip_address',request()->ip())->get();
+                    return view('frontend.cart',compact('carts','discount'));
+                }else{
+                    $notification = array(
+                        'message' => "Invalid Cupon",
+                        'alert-type' => 'error'
+                    );
+                    return redirect()->back()->with($notification);
+                }
+            }else{
+                $notification = array(
+                    'message' => "No Cupon Found!",
+                    'alert-type' => 'error'
+                );
+                return redirect()->back()->with($notification);
+            }
+        }else{
+            $carts = \App\Model\Cart::with('products')->where('ip_address',request()->ip())->get();
+            return view('frontend.cart',compact('carts'));
+        }
+
     }
     public function wish(){
         $wishes = \App\Model\Wish::with('products')->where('ip_address',request()->ip())->get();

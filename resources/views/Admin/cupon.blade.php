@@ -20,6 +20,7 @@
                                 <th>Discont (%)</th>
                                 <th>Expair Date</th>
                                 <th>Status</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -28,6 +29,13 @@
                                 <td>{{$cupon->cupon_name}}</td>
                                 <td>{{$cupon->discount}} %</td>
                                 <td>{{$cupon->validity_till}}</td>
+
+                                <td>@if($cupon->validity_till<=(\Carbon\Carbon::now()->format('Y-m-d')))
+                                        <span class="badge badge-danger">Not Valid</span>
+                                    @else
+                                        <span class="badge badge-success">Valid</span>
+                                    @endif
+                                </td>
                                 <td>
                                     <a href="{{route('delete_cupon',$cupon->id)}}" class="btn btn-danger delete"><i class="fa fa-trash-o"></i></a>
                                 </td>

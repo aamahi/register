@@ -137,6 +137,8 @@
     </div>
 </div>
 <!-- Modal area start -->
+
+
 <!-- jquery latest version -->
 <script src="{{asset('frontend/js/vendor/jquery-2.2.4.min.js')}}"></script>
 <!-- bootstrap js -->
@@ -167,6 +169,7 @@
 <!--toastr-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 <script>
         @if(Session::has('message'))
     var type = "{{ Session::get('alert-type', 'info') }}";
