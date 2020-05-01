@@ -30,14 +30,19 @@
                         <li>
                             <a href="javascript:void(0);"><i class="fa fa-user"></i> My Account <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown_style">
-                                <li><a href="login.html">Login</a></li>
-                                <li><a href="register.html">Register</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="wishlist.html">wishlist</a></li>
+                                <li><a href="{{route('customar_login')}}">Login</a></li>
+                                <li><a href="{{route('customar_register')}}">Register</a></li>
+                                <li><a href={{route('cart')}}>Cart</a></li>
+                                <li><a href="{{route('checkout')}}">Checkout</a></li>
+                                <li><a href="{{route('wish')}}">wishlist</a></li>
                             </ul>
                         </li>
-                        <li><a href="register.html"> Login/Register </a></li>
+                        @guest
+                        <li><a href="{{route('customar_register')}}"> Login/Register </a></li>
+                        @endguest
+                        @auth
+                            <li><a href="">{{Auth::user()->name}} </a></li>
+                        @endauth
                     </ul>
                 </div>
             </div>

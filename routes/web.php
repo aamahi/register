@@ -92,4 +92,9 @@ Route::post('/add_wish','Wish@add_wish')->name('add_wish');
 //      AUTH ROUTE
 Auth::routes(['verify' => true]);
 
+Route::get('/customar/register/','Customar@register')->name('customar_register');
+Route::post('/customar/register/','Customar@customar_register');
+Route::get('/customar/login/','Customar@login')->name('customar_login');
+Route::get('/checkout/','Checkout@checkout')->name('checkout');
+
 
