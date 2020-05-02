@@ -33,7 +33,7 @@
                                 <li><a href="{{route('customar_login')}}">Login</a></li>
                                 <li><a href="{{route('customar_register')}}">Register</a></li>
                                 <li><a href={{route('cart')}}>Cart</a></li>
-                                <li><a href="{{route('checkout')}}">Checkout</a></li>
+                                <li><a href="{{url('/checkout')}}">Checkout</a></li>
                                 <li><a href="{{route('wish')}}">wishlist</a></li>
                             </ul>
                         </li>

@@ -41,100 +41,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/checkout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/flags/de.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/flags/es.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/flags/fr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/flags/ru.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/flags/us.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/gallery/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/gallery/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/gallery/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/gallery/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/gallery/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/gallery/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/mega-menu/corner_image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/mega-menu/mega-menu-images1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/mega-menu/mega-menu-images2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/mega-menu/mega-menu-images3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/mega-menu/mega-menu-images4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/mega-menu/mega-menu-images5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/mega-menu/mega-menu-images6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/photos/user1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/photos/user2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/photos/user3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/photos/user4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/photos/user5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/product-list/pro-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/product-list/pro-thumb-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/product-list/pro-thumb-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/product-list/pro-thumb-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/product-list/pro-thumb-big.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/product-list/pro1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/product-list/pro2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/product-list/pro3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/img/slider/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/banner/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/banner/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/blog/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/blog/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/blog/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/blog/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/blog/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/blog/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/blog/blog-details.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/blog/blog-details2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/comment/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/comment/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/comment/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/post/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/post/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/post/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/post/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/product-details.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/product-details/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/product-details/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/product-details/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/product-details/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/product-details/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/product/product-details/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/slider/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/slider/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/slider/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/slider/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/slider/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/slider/6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/images/test/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/checkout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/content/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/content/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -332,6 +245,7 @@
       <workItem from="1587840057870" duration="2862000" />
       <workItem from="1587847098900" duration="6039000" />
       <workItem from="1587906309255" duration="9159000" />
+      <workItem from="1588440511459" duration="4659000" />
     </task>
     <servers />
   </component>
@@ -379,6 +293,10 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="314" y="224" key="com.intellij.ide.util.TipDialog/0.25.1366.743@0.25.1366.743" timestamp="1586284499553" />
+    <state x="462" y="28" width="432" height="739" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588445753771">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="462" y="28" width="432" height="739" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.28.1366.740@0.28.1366.740" timestamp="1588445753771" />
     <state x="433" y="313" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587164854121">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
@@ -387,15 +305,16 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="100" y="125" width="1166" height="543" key="dock-window-1/0.25.1366.743@0.25.1366.743" timestamp="1587591671461" />
-    <state x="347" y="175" key="run.anything.popup" timestamp="1587214756538">
-      <screen x="0" y="25" width="1366" height="743" />
+    <state x="347" y="177" key="run.anything.popup" timestamp="1588367529059">
+      <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587214756538" />
-    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup" timestamp="1588367190056">
+    <state x="347" y="177" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1588367529059" />
+    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup" timestamp="1588448812065">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="521" y="105" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587932816720" />
-    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1588367190056" />
+    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1588448812065" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -452,7 +371,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php</url>
-          <line>126</line>
+          <line>200</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

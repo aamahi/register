@@ -10,10 +10,12 @@ class Checkout extends Controller
     {
         $this->middleware('auth');
     }
-    public function checkout(){
+    public function checkout(Request $request){
         $rule =Auth::user()->rule;
         if ($rule == 1){
-            return view('frontend.checkout');
+            $total_price = $request->total_price;
+            $carts = \App\Model\Cart::with('products')->where('ip_address',request()->ip())->get();
+            return view('frontend.checkout',compact('carts','total_price'));
         }else{
             $notification = array(
                 'message' => "Something wrong",
@@ -22,4 +24,8 @@ class Checkout extends Controller
             return redirect()->back()->with($notification);
         }
     }
+//    public function checkout_process(Request $request){
+//
+//        return view('frontend.checkout',compact('total_price'));
+//    }
 }

@@ -112,7 +112,7 @@
                     <section class="card">
                         <div class="card-body progress-card">
                             <div class="task-progress">
-                                <h1>User List</h1>
+                                <h1>Admin</h1>
                             </div>
                             <div class="task-option">
                                <p>{{Auth::User()->name}}</p>
@@ -128,6 +128,7 @@
                             </tr>
                             <tbody>
                             @foreach($all_user as $user)
+                                @if($user->rule==0)
                                 <tr>
                                     <td>{{$user->id}}</td>
                                     <td>
@@ -140,6 +141,7 @@
                                         <span class="badge badge-pill badge-success">{{$user->created_at->diffForHumans()}}</span>
                                     </td>
                                 </tr>
+                                @endif
                             @endforeach
                             </tbody>
                         </table>
