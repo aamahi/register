@@ -3,7 +3,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Inventory </title>
+    <title>Login / Register </title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -37,7 +37,7 @@
 <body>
 <div class="main-bg">
     <!-- title -->
-    <h1>INVENTORY SYSTEM</h1>
+    <h1>Ecommerce </h1>
     <!-- //title -->
     <div class="sub-main-w3">
         <div class="image-style">
