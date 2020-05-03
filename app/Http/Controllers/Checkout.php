@@ -24,8 +24,5 @@ class Checkout extends Controller
             return redirect()->back()->with($notification);
         }
     }
-//    public function checkout_process(Request $request){
-//
-//        return view('frontend.checkout',compact('total_price'));
-//    }
+
 }
