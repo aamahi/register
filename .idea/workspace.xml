@@ -41,13 +41,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -245,7 +243,7 @@
       <workItem from="1587840057870" duration="2862000" />
       <workItem from="1587847098900" duration="6039000" />
       <workItem from="1587906309255" duration="9159000" />
-      <workItem from="1588440511459" duration="4659000" />
+      <workItem from="1588440511459" duration="10059000" />
     </task>
     <servers />
   </component>
@@ -265,10 +263,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="278" y="58" width="800" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587743885003">
-      <screen x="0" y="25" width="1366" height="743" />
+    <state x="278" y="61" width="800" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588462466643">
+      <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="278" y="58" width="800" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1366.743@0.25.1366.743" timestamp="1587743885003" />
+    <state x="278" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1366.740@0.28.1366.740" timestamp="1588462466643" />
     <state x="238" y="201" width="880" height="389" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587233140335">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
@@ -281,6 +280,10 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="444" y="154" key="FileChooserDialogImpl/0.25.1366.743@0.25.1366.743" timestamp="1587747457349" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1588462492795">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/0.28.1366.740@0.28.1366.740" timestamp="1588462492795" />
     <state x="359" y="124" width="638" height="544" key="NewPhpClassDialog" timestamp="1586901450322">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
@@ -289,6 +292,10 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="468" y="323" width="380" height="146" key="NewPhpFileDialog/0.25.1366.743@0.25.1366.743" timestamp="1586972762906" />
+    <state x="576" y="287" width="367" height="247" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1588463585660">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="576" y="287" width="367" height="247" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.28.1366.740@0.28.1366.740" timestamp="1588463585660" />
     <state x="314" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1586284499553">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
@@ -310,11 +317,11 @@
     </state>
     <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587214756538" />
     <state x="347" y="177" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1588367529059" />
-    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup" timestamp="1588448812065">
+    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup" timestamp="1588464478944">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="521" y="105" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587932816720" />
-    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1588448812065" />
+    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1588464478944" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

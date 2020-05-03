@@ -97,6 +97,7 @@ Route::post('/customar/register/','Customar@customar_register');
 Route::get('/customar/login/','Customar@login')->name('customar_login');
 Route::get('/checkout/','Checkout@checkout');
 Route::post('/checkout/','Checkout@checkout');
+Route::post('/order','Order@index')->name('order');
 //Route::post('/checkout/','Checkout@checkout_process');
 
 
