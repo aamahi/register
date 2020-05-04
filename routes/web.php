@@ -100,4 +100,5 @@ Route::post('/checkout/','Checkout@checkout');
 Route::post('/order','Order@index')->name('order');
 //Route::post('/checkout/','Checkout@checkout_process');
 
-
+Route::get('stripe', 'StripePaymentController@stripe');
+Route::post('stripe', 'StripePaymentController@stripePost')->name('stripe.post');

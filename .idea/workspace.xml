@@ -41,8 +41,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/stripe.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/register.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/register.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +171,7 @@
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZrmVeg4KgRnyAZbkXSaLMUXKU3" />
@@ -182,13 +198,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/frontend" />
       <recent name="$PROJECT_DIR$/resources/views/Admin" />
       <recent name="$PROJECT_DIR$/resources/views/auth" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views" />
     </key>
   </component>
   <component name="RunManager">
@@ -240,7 +256,9 @@
       <workItem from="1587847098900" duration="6039000" />
       <workItem from="1587906309255" duration="9159000" />
       <workItem from="1588440511459" duration="10772000" />
-      <workItem from="1588499120460" duration="1298000" />
+      <workItem from="1588499120460" duration="1900000" />
+      <workItem from="1588538343095" duration="6085000" />
+      <workItem from="1588632853925" duration="2291000" />
     </task>
     <servers />
   </component>
@@ -314,11 +332,11 @@
     </state>
     <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587214756538" />
     <state x="347" y="177" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1588367529059" />
-    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup" timestamp="1588499846734">
+    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup" timestamp="1588634471436">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="521" y="105" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587932816720" />
-    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1588499846734" />
+    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1588634471436" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -377,6 +395,11 @@
           <url>file://$PROJECT_DIR$/resources/views/frontend/layout/header.blade.php</url>
           <line>200</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/frontend/stripe.blade.php</url>
+          <line>118</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
