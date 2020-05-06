@@ -49,7 +49,8 @@ class Order extends Controller
             return redirect()->route('home')->with($notification);
 
         }else{
-            return view('frontend.stripe')->with('total',$request->total);
+            $orders = $request->all();
+            return view('frontend.stripe',compact('orders'));
         }
     }
 

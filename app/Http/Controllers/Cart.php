@@ -37,6 +37,7 @@ class Cart extends Controller
    }
    public function update_cart(Request $request){
        foreach ($request->quantity as $cart_id=>$quantity) {
+
                \App\Model\Cart::find($cart_id)->update([
                    'quantity'=> $quantity,
                ]);

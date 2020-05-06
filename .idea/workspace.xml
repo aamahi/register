@@ -41,23 +41,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/stripe.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/register.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/register.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/stripe2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/stripe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/stripe.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +247,8 @@
       <workItem from="1588440511459" duration="10772000" />
       <workItem from="1588499120460" duration="1900000" />
       <workItem from="1588538343095" duration="6085000" />
-      <workItem from="1588632853925" duration="2291000" />
+      <workItem from="1588632853925" duration="2932000" />
+      <workItem from="1588792073262" duration="5602000" />
     </task>
     <servers />
   </component>
@@ -287,10 +277,11 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="238" y="201" width="880" height="389" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1366.743@0.25.1366.743" timestamp="1587233140335" />
-    <state x="416" y="154" width="524" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587592639092">
-      <screen x="0" y="25" width="1366" height="743" />
+    <state x="416" y="156" width="524" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588798671787">
+      <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="416" y="154" width="524" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1366.743@0.25.1366.743" timestamp="1587592639092" />
+    <state x="416" y="156" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.28.1366.740@0.28.1366.740" timestamp="1588798671787" />
     <state x="444" y="154" key="FileChooserDialogImpl" timestamp="1587747457349">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
@@ -332,11 +323,11 @@
     </state>
     <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587214756538" />
     <state x="347" y="177" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1588367529059" />
-    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup" timestamp="1588634471436">
+    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup" timestamp="1588797573210">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="521" y="105" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587932816720" />
-    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1588634471436" />
+    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1588797573210" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -397,8 +388,8 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/frontend/stripe.blade.php</url>
-          <line>118</line>
+          <url>file://$PROJECT_DIR$/resources/views/frontend/stripe2.blade.php</url>
+          <line>127</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
