@@ -19,4 +19,7 @@ class Order extends Model
         'total',
         'status',
     ];
+    public  function order_lists(){
+        return $this->hasMany('App\Model\Order_list','order_id','id');
+    }
 }

@@ -3,7 +3,7 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
             <li>
-                <a class="active" href="index.html">
+                <a class="active" href="{{url('/home')}}">
                     <i class="fa fa-dashboard"></i>
                     <span>Dashboard</span>
                 </a>
@@ -20,16 +20,6 @@
             </li>
             <li class="sub-menu">
                 <a href="javascript:;" >
-                    <i class="fa fa-picture-o"></i>
-                    <span>Banner</span>
-                </a>
-                <ul class="sub">
-                    <li><a  href="{{route('admin.banner')}}">Banner List</a></li>
-                    <li><a  href="{{route('delete_slider')}}">Deleted Banner</a></li>
-                </ul>
-            </li>
-            <li class="sub-menu">
-                <a href="javascript:;" >
                     <i class="fa fa-shopping-cart"></i>
                     <span>Product</span>
                 </a>
@@ -39,16 +29,20 @@
                     <li><a  href="{{route('deletd_category_list')}}">Deleted Product</a></li>
                 </ul>
             </li>
-
             <li class="sub-menu">
-                <a href="javascript:;" >
-                    <i class="fa fa-tasks"></i>
+                <a href="{{route('admin.order')}}" >
+                    <i class="fa fa-tag"></i>
                     <span>Order</span>
                 </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-picture-o"></i>
+                    <span>Banner</span>
+                </a>
                 <ul class="sub">
-                    <li><a  href="{{route('admin.order')}}">Order List</a></li>
-                    <li><a  href="{{route('add_product')}}">Product Add</a></li>
-                    <li><a  href="{{route('deletd_category_list')}}">Deleted Product</a></li>
+                    <li><a  href="{{route('admin.banner')}}">Banner List</a></li>
+                    <li><a  href="{{route('delete_slider')}}">Deleted Banner</a></li>
                 </ul>
             </li>
             <li class="sub-menu">

@@ -70,6 +70,8 @@ Route::group(['middleware'=>['auth','verified']],function (){
     Route::get('/admin/order/',"AdminOrder@orderlist")->name('admin.order');
     Route::get('/admin/order/view/{id}',"AdminOrder@view_order")->name('view_order');
     Route::get('/admin/order/delete/{id}',"AdminOrder@delete_order")->name('delete_order');
+    Route::get('/admin/order/delivary/{id}',"AdminOrder@order_delivary")->name('order_delivary');
+    Route::get('/admin/order/cancel/{id}',"AdminOrder@order_cancel")->name('order_cancel');
 
 
 });

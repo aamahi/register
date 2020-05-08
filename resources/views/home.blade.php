@@ -24,10 +24,8 @@
                             <i class="fa fa-tags"></i>
                         </div>
                         <div class="value">
-                            <h1 class=" count2">
-                                0
-                            </h1>
-                            <p>Sales</p>
+                            <h1>5</h1>
+                            <p>Today Sales</p>
                         </div>
                     </section>
                 </div>
@@ -38,7 +36,7 @@
                         </div>
                         <div class="value">
                             <h1 class=" count3">
-                                0
+                                5
                             </h1>
                             <p>New Order</p>
                         </div>

@@ -12,7 +12,8 @@ class AdminOrder extends Controller
         return view('Admin.orderlist',compact('orders'));
     }
     public function view_order($id){
-        echo $id;
+        $customar_info= \App\Model\Order::with('order_lists')->find($id);
+        return view('Admin.view_order',compact('customar_info'));
     }
     public function delete_order($id){
         //delete Order
@@ -25,5 +26,27 @@ class AdminOrder extends Controller
 
         return redirect()->back()->with($notification);
 
+    }
+    public function order_delivary($id){
+       $update = \App\Model\Order::find($id);
+       $update->status = 1;
+       $update->save();
+        $notification = array(
+            'message' => "Order Delivary Sucessfully",
+            'alert-type' => 'info'
+        );
+
+        return redirect()->back()->with($notification);
+    }
+    public function order_cancel($id){
+        $update = \App\Model\Order::find($id);
+        $update->status = 2;
+        $update->save();
+        $notification = array(
+            'message' => "Order Cancel Sucessfully",
+            'alert-type' => 'error'
+        );
+
+        return redirect()->route('admin.order')->with($notification);
     }
 }
