@@ -26,7 +26,7 @@
 
 <div class="container">
 
-    <h1>Online Payment System</h1>
+    <h1 class="text-center mt-2 mb-2">Online Payment System</h1>
 
     <div class="row">
         <div class="col-md-6 col-md-offset-3">

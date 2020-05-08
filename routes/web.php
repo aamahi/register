@@ -66,6 +66,11 @@ Route::group(['middleware'=>['auth','verified']],function (){
     Route::post('/admin/cupon/',"Cupon@add_cupon");
     Route::get('/delete/cupon/{id}',"Cupon@delete_cupon")->name('delete_cupon');
 
+    //Order
+    Route::get('/admin/order/',"AdminOrder@orderlist")->name('admin.order');
+    Route::get('/admin/order/view/{id}',"AdminOrder@view_order")->name('view_order');
+    Route::get('/admin/order/delete/{id}',"AdminOrder@delete_order")->name('delete_order');
+
 
 });
 //      Frontend Controller
