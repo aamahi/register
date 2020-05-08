@@ -12,7 +12,8 @@ class AdminOrder extends Controller
         return view('Admin.orderlist',compact('orders'));
     }
     public function view_order($id){
-        echo $id;
+        $customar_info= \App\Model\Order::with('order_lists')->find($id);
+        return view('Admin.view_order',compact('customar_info'));
     }
     public function delete_order($id){
         //delete Order
@@ -25,5 +26,8 @@ class AdminOrder extends Controller
 
         return redirect()->back()->with($notification);
 
+    }
+    public function order_delivary(){
+        
     }
 }
