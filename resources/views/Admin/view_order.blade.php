@@ -63,17 +63,18 @@
                             <div class="col-lg-4 invoice-block ">
                                 <ul class="unstyled amounts">
                                     <li><strong>Sub - Total amount : </strong>{{$customar_info->subtotal}} taka</li>
-                                    <li><strong>Dicount Amount : </strong>{{($customar_info->total)-($customar_info->subtotal)}} taka</li>
+                                    <li><strong>Discount Amount : </strong>{{($customar_info->subtotal)-($customar_info->total)}} taka</li>
                                     <li><strong>Grand Total : </strong> {{$customar_info->total}} taka</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="text-center invoice-btn">
                             @if($customar_info->status==0)
-                            <a href="{{route('order_delivary',$customar_info->id)}}" class="btn btn-success text-light"><i class="fa fa-check"></i> Delivary </a>
-                            <a href="{{route('order_delivary',$customar_info->id)}}" class="btn btn-danger text-light"><i class="fa fa-times"></i> Cancel </a>
+                                <a href="{{route('order_delivary',$customar_info->id)}}" class="btn btn-success text-light"><i class="fa fa-check"></i> Delivary </a>
                             @endif
-                            <a class="btn btn-info text-light" onclick="javascript:window.print();"><i class="fa fa-print"></i> Print </a>
+                                <a href="{{route('order_cancel',$customar_info->id)}}" class="btn btn-danger text-light"><i class="fa fa-times"></i> Cancel </a>
+                                <a class="btn btn-info text-light" onclick="javascript:window.print();"><i class="fa fa-print"></i> Print </a>
+                                <a href="{{route('admin.order')}}" class="btn btn-secondary text-light"><i class="fa fa-reply"></i> Back </a>
                         </div>
                     </div>
                 </div>

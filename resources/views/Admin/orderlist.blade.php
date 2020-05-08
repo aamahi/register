@@ -39,11 +39,11 @@
                                 <td>{{$order->total}} taka </td>
                                 <td>{{$order->created_at->format('d/m/Y')}}</td>
                                 <td>@if($order->status==0)
-                                        <span class="badge badge-warning">pending</span>
+                                        <span class="badge badge-warning">Pending</span>
                                     @elseif($order->status==1)
-                                        <span class="badge badge-danger">Dele</span>
+                                        <span class="badge badge-success">Done</span>
                                     @else
-                                        <span class="badge badge-success">Delibaryed</span>
+                                        <span class="badge badge-danger">Cancel</span>
                                     @endif
                                 </td>
                                 <td>

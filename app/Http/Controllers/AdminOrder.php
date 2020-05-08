@@ -27,7 +27,26 @@ class AdminOrder extends Controller
         return redirect()->back()->with($notification);
 
     }
-    public function order_delivary(){
-        
+    public function order_delivary($id){
+       $update = \App\Model\Order::find($id);
+       $update->status = 1;
+       $update->save();
+        $notification = array(
+            'message' => "Order Delivary Sucessfully",
+            'alert-type' => 'info'
+        );
+
+        return redirect()->back()->with($notification);
+    }
+    public function order_cancel($id){
+        $update = \App\Model\Order::find($id);
+        $update->status = 2;
+        $update->save();
+        $notification = array(
+            'message' => "Order Cancel Sucessfully",
+            'alert-type' => 'error'
+        );
+
+        return redirect()->route('admin.order')->with($notification);
     }
 }
