@@ -42,13 +42,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b805a7cf-619c-4c41-94e8-504cc34e5c50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminOrder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/orderlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/orderlist.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/view_order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/view_order.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/content/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/content/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +174,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -252,7 +246,11 @@
       <workItem from="1588538343095" duration="6085000" />
       <workItem from="1588632853925" duration="2932000" />
       <workItem from="1588792073262" duration="7298000" />
-      <workItem from="1588956587382" duration="14568000" />
+      <workItem from="1588956587382" duration="15263000" />
+      <workItem from="1589048092068" duration="48000" />
+      <workItem from="1589137061331" duration="763000" />
+      <workItem from="1589238524737" duration="2830000" />
+      <workItem from="1589390310346" duration="1382000" />
     </task>
     <servers />
   </component>
@@ -286,10 +284,11 @@
     </state>
     <state x="416" y="154" width="524" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1366.743@0.25.1366.743" timestamp="1587592639092" />
     <state x="416" y="156" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.28.1366.740@0.28.1366.740" timestamp="1588798671787" />
-    <state x="444" y="154" key="FileChooserDialogImpl" timestamp="1587747457349">
-      <screen x="0" y="25" width="1366" height="743" />
+    <state x="444" y="156" width="424" height="483" key="FileChooserDialogImpl" timestamp="1589048142961">
+      <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="444" y="154" key="FileChooserDialogImpl/0.25.1366.743@0.25.1366.743" timestamp="1587747457349" />
+    <state x="444" y="156" width="424" height="483" key="FileChooserDialogImpl/0.28.1366.740@0.28.1366.740" timestamp="1589048142961" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1588462492795">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -327,11 +326,11 @@
     </state>
     <state x="347" y="175" key="run.anything.popup/0.25.1366.743@0.25.1366.743" timestamp="1587214756538" />
     <state x="347" y="177" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1588367529059" />
-    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup" timestamp="1588979129354">
+    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup" timestamp="1589241464126">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="521" y="105" width="672" height="678" key="search.everywhere.popup/0.25.1366.743@0.25.1366.743" timestamp="1587932816720" />
-    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1588979129354" />
+    <state x="521" y="108" width="672" height="676" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1589241464126" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
