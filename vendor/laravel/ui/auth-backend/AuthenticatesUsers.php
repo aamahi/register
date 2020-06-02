@@ -14,7 +14,7 @@ trait AuthenticatesUsers
     /**
      * Show the application's login form.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View
      */
     public function showLoginForm()
     {
@@ -173,7 +173,7 @@ trait AuthenticatesUsers
 
         return $request->wantsJson()
             ? new Response('', 204)
-            : redirect('/login');
+            : redirect('/');
     }
 
     /**

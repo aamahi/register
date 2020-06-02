@@ -102,7 +102,7 @@
                                             @endisset
                                         </li>
                                     </ul>
-                                    <form method="post" action="{{url('checkout')}}">
+                                    <form method="post" action="{{url('/checkout')}}">
                                         @csrf
                                         <input name="total_price" type="hidden" value="{{$total_price}}">
                                         <button type="submit" class="btn btn-danger">Proceed to Checkout</button>
